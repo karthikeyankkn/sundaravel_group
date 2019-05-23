@@ -3,6 +3,11 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 /* ---------------------------------------------- /*
  * Preloader
  /* ---------------------------------------------- */
+$(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+});
+
 (function(){
     $(window).on('load', function() {
         $('.loader').fadeOut();
