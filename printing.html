@@ -24,6 +24,7 @@
     Stylesheets
     =============================================
     
+
     -->
     <!-- Default stylesheets-->
     <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -44,7 +45,15 @@
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Tangerine&display=swap" rel="stylesheet">
   </head>
-
+<style type="text/css">
+  .navbar-custom {
+    background-color: #0070c0;}
+    .referral-program {
+    background-color: #0070c0 !important;}
+    .bg-dark {
+    background: #0070c0;
+}
+</style>
 <style type="text/css">
   .referral-program {
 background-color: #ee1c25;
@@ -113,7 +122,7 @@ transform: rotate(0deg);
               -moz-border-radius: 50%;
               height: 500px;
               width: 500px;
-              background: #ee1c25;
+              background: #0070c0;
               display: block;
               position: absolute;
               bottom: -300px;
@@ -375,26 +384,26 @@ transform: rotate(0deg);
                 <a href="#home">HOME</a>
               </li>
               <li>
-                <a href="#menu2">PRODUCT</a>
+                <a href="#menu2">PROCESS</a>
               </li>
               <!-- <li>
                 <a href="#menu3">DOMESTIC</a>
               </li> -->
               <li>
-                <a href="#menu4">QUALITY ASSURANCE</a>
+                <a href="#menu3">PRODUCTS</a>
               </li>
               <li>
-                <a href="#menu5">PROFILE</a>
+                <a href="#menu4">PROFILE</a>
               </li>
               <li>
-                <a href="#menu6">INFRASTRUCTURE</a>
+                <a href="#menu5">INFRASTRUCTURE</a>
               </li>
             </ul>
           </div>
         </section>
 
         
-        <section id="menu3">
+        <section >
           <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="8000" id="bs-carousel">
             <!-- Overlay -->
             <div class="overlay"></div>
@@ -442,21 +451,101 @@ transform: rotate(0deg);
           </div>
         </section>
 
-        <section  id="menu4" style="padding-top: 100px;">
-          <div class="container">
+        <section id="menu2" class=" sliding-portfolio">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 class="module-title font-alt">PROCESS</h2>
+            </div>
+          </div>
+          <div class="container-fluid">
             <div class="row">
-              <div class="col-md-6 text-center">
-                <h2 class="module-title">QUALITY  ASSURANCE</h2>
-                  <p style="font-size: 17px;">We have a state-of-the-art in-house lab to test the quality of raw materials before they are pushed for production. Our highly trained quality assurance personnel are available 24*7 at the production site to ensure quality and safety parameters. We employ State-of-the-art box filling technology to maintain accuracy in stick count. </p>
-              </div> 
-              <div class="col-md-6">
-                <img src="https://i.pinimg.com/originals/fa/6d/c6/fa6dc6502c7ae68f4ede34280013f5c0.jpg" alt="sundaravelgroup">
-              </div>   
+              <div class="owl-carousel text-center" data-items="4" data-pagination="false" data-navigation="false">
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item"><a href="">
+                        <div class="work-image"><img src="/assets/images/pre-press.jpg" alt="sundaravelgroups"/></div>
+                        <h3>Pre Press</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Pre Press</h3>
+                          <!-- <div class="work-descr">Illustration</div> -->
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item"><a href="#">
+                        <div class="work-image"><img src="/assets/images/offset-printing.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class="">Offset Printing</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Offset Printing</h3>
+                          <!-- <div class="work-descr">Marketing</div> -->
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item"><a href="#">
+                        <div class="work-image"><img src="assets/images/score-printing.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class="">Score Printing</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Score Printing</h3>
+                          <!-- <div class="work-descr">Illustration</div> -->
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item"><a href="#">
+                        <div class="work-image"><img src="assets/images/screen-printing.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class="">Screen Printing</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Screen Printing</h3>
+                          <!-- <div class="work-descr">Illustration</div> -->
+                        </div></a></div>
+                  </div>
+                </div>
+                
+              </div>
+              <!-- <div class="col-sm-12">
+                <div class="text-center"><a class="btn btn-border-d btn-circle mt-50" href="#">View All Cases</a></div>
+              </div> -->
             </div>
           </div>
         </section>
 
-        <section id="menu5">
+
+        <section id="menu3">
+          <div class="container">
+            <h2 class=" text-center" style="text-align: center;padding: 30px;">PRODUCTS</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="/assets/images/pamphlets.jpg" width="100%" alt="sundaravelgroup"> 
+                  <h4 class="text-center">Pamphlets</h4>
+              </div>
+              <div class="col-md-4">
+                <img src="/assets/images/cn-box.png" width="100%" alt="sundaravelgroup">
+                    <h4 class="text-center">Mono Carton Boxes</h4>
+              </div>
+              <div class="col-md-4">
+                <img src="/assets/images/corrugated-boxes.jpg" width="100%" alt="sundaravelgroup">
+                    <h4 class="text-center">corrugated boxes</h4>
+              </div>
+              
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="/assets/images/calender.jpg" width="100%" alt="sundaravelgroup">
+                    <h4 class="text-center">Calendars</h4>
+              </div>
+              <div class="col-md-4">
+                <img src="/assets/images/leaflets.jpg" width="100%" alt="sundaravelgroup">
+                    <h4 class="text-center">Leaflets</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="menu4">
           <div class="container">
             <div class="row">
               <h2 class="module-title">PROFILE</h2>
@@ -506,16 +595,20 @@ transform: rotate(0deg);
           </div>
         </section>
 
-        <section  id="menu6" style="padding-top: 100px;">
+        <section  id="menu5">
           <div class="container">
+            <h2 class="module-title">INFRASTRUCTURE </h2>
             <div class="row">
-              <div class="col-md-6 text-center">
-                <img src="https://lh3.googleusercontent.com/-zn1WOzzFF9o/XOOb3a4hDNI/AAAAAAAACaM/PwU4pvTPL9UtmohH9UCcJaegBoQNCnoNACK8BGAs/s0/2019-05-20.jpg" alt="sundaravelgroup" width="100%">
+              <div class="col-md-4 text-center">
+                <img src="/assets/images/printing-infra1.jpg" width="100%" alt="sundaravelgroup">
               </div> 
-              <div class="col-md-6 text-center">
-                <h2 class="module-title">INFRASTRUCTURE </h2>
-                  <p style="font-size: 17px;">Sundaravel Group provides 2000+ direct employment and additional indirect employment to 1000+families.</p>
-                  <p style="font-size: 17px;">We have fully automatic production line to ensure a safe work environment for our employees and create a high-quality product without compromising at any level during the production process. We have machines to conduct quality checks at various stages starting from raw materials to finally placing the right count during the packaging. The process is fine-tuned to the last mile to ensure our clients get safe and quality products.</p>
+              <div class="col-md-4 text-center">
+                <img src="/assets/images/printing-infra2.jpg" width="100%" alt="sundaravelgroup">
+              </div> 
+              <div class="col-md-4 text-center">
+                
+                  <p style="font-size: 17px;">German technology offset printing machines ensure precision printing of your design on match labels.</p>
+                  <p style="font-size: 17px;">Accurate scoring and die cutting is possible as we rely on German technology for our post press operations.</p>
                   
               </div> 
                 
