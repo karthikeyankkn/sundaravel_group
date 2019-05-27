@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+  .matches-container{
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .matches-container li{
+    height: 250px;
+    margin-bottom: 65px;
+  }
+  .front img{
+    transform: scale(0.8, 0.8);
+    transition: 0.5s ease;
+  }
+  .front img:hover{
+    transform: scale(1.2, 1.2);
+    transform: translate(0px,-60px);
+  }
+  
+  .product_image{
+    margin-bottom: 10px;
+  }
+  /* rotate style */
+  /* entire container, keeps perspective */
+  .flip-container {
+    perspective: 1000px;
+  }
+    /* flip the pane when hovered */
+    /*.flip-container:hover .flipper, .flip-container.hover .flipper {
+      transform: rotateY(180deg);
+    }*/
+  .flip-rotate{
+      transform: rotateY(180deg);
+    }
+  .flip-container, .front, .back {
+    transition: 0.5s ease;
+  }
+
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  /* hide back of pane during swap */
+  .front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* front pane, placed above back */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    /*transform: rotateY(0deg);*/
+    background: linear-gradient(to bottom left, #DEDEDE, #747474);
+  }
+
+  /* back, initially hidden pane */
+  .back {
+    /*transform: rotateY(180deg);*/
+    background-color: lightgreen;
+    color: brown;
+  }
+</style>
+
+<div class="container">
+  <ul class="matches-container">
+    <div class="col-md-4">
+      <li class="product_image flip-container">
+        <div class="matches-box flipper">
+          <div class="front">
+            <!-- front content ontouchstart="this.classList.toggle('hover');" -->
+            <img src="http://www.europematch.eu/storage/app/media/BX1_product.png" width="100%" class="">
+          </div>
+          <div class="back flip-rotate">
+            <!-- back content -->
+            <p>back side conentsf sdf sdfsd.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </li>
+      <li class="product_image flip-container">
+        <div class="matches-box flipper">
+          <div class="front">
+            <!-- front content ontouchstart="this.classList.toggle('hover');" -->
+            <img src="http://www.europematch.eu/storage/app/media/BX1_product.png" width="100%" class="">
+          </div>
+          <div class="back flip-rotate">
+            <!-- back content -->
+            <p>back side conentsf sdf sdfsd.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </li>
+      <li class="product_image flip-container">
+        <div class="matches-box flipper">
+          <div class="front">
+            <!-- front content ontouchstart="this.classList.toggle('hover');" -->
+            <img src="http://www.europematch.eu/storage/app/media/BX1_product.png" width="100%" class="">
+          </div>
+          <div class="back flip-rotate">
+            <!-- back content -->
+            <p>back side conentsf sdf sdfsd.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </li>
+    </div>
+
+    <div class="col-md-4" style="margin-top: 65px;">
+      <li class="product_image flip-container">
+        <div class="matches-box flipper">
+          <div class="front">
+            <!-- front content ontouchstart="this.classList.toggle('hover');" -->
+            <img src="http://www.europematch.eu/storage/app/media/BX1_product.png" width="100%" class="">
+          </div>
+          <div class="back flip-rotate">
+            <!-- back content -->
+            <p>back side conentsf sdf sdfsd.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </li>
+      <li class="product_image flip-container">
+        <div class="matches-box flipper">
+          <div class="front">
+            <!-- front content ontouchstart="this.classList.toggle('hover');" -->
+            <img src="http://www.europematch.eu/storage/app/media/BX1_product.png" width="100%" class="">
+          </div>
+          <div class="back flip-rotate">
+            <!-- back content -->
+            <p>back side conentsf sdf sdfsd.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </li>
+      <li class="product_image flip-container">
+        <div class="matches-box flipper">
+          <div class="front">
+            <!-- front content ontouchstart="this.classList.toggle('hover');" -->
+            <img src="http://www.europematch.eu/storage/app/media/BX1_product.png" width="100%" class="">
+          </div>
+          <div class="back flip-rotate">
+            <!-- back content -->
+            <p>back side conentsf sdf sdfsd.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </li>
+    </div>
+
+    <div class="col-md-4">
+      <li class="product_image flip-container">
+        <div class="matches-box flipper">
+          <div class="front">
+            <!-- front content ontouchstart="this.classList.toggle('hover');" -->
+            <img src="http://www.europematch.eu/storage/app/media/BX1_product.png" width="100%" class="">
+          </div>
+          <div class="back flip-rotate">
+            <!-- back content -->
+            <p>back side conentsf sdf sdfsd.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </li>
+      <li class="product_image flip-container">
+        <div class="matches-box flipper">
+          <div class="front">
+            <!-- front content ontouchstart="this.classList.toggle('hover');" -->
+            <img src="http://www.europematch.eu/storage/app/media/BX1_product.png" width="100%" class="">
+          </div>
+          <div class="back flip-rotate">
+            <!-- back content -->
+            <p>back side conentsf sdf sdfsd.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </li>
+      <li class="product_image flip-container">
+        <div class="matches-box flipper">
+          <div class="front">
+            <!-- front content ontouchstart="this.classList.toggle('hover');" -->
+            <img src="http://www.europematch.eu/storage/app/media/BX1_product.png" width="100%" class="">
+          </div>
+          <div class="back flip-rotate">
+            <!-- back content -->
+            <p>back side conentsf sdf sdfsd.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+        </div>
+      </li>
+    </div>
+    
+  </ul>
+</div>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    // $(".matches-container li").click(function(){
+    //   $(this).children("div.matches-box img").addClass("matches-hover-effect").parent("li").siblings("li").children("img").removeClass("matches-hover-effect");
+    // });
+
+    $(".front").click(function(){
+      $(this).toggleClass("flip-rotate").siblings(".back").toggleClass("flip-rotate");
+    });
+    $(".back").mouseleave(function(){
+      $(this).toggleClass("flip-rotate").siblings(".front").toggleClass("flip-rotate");
+    });
+  });
+</script>
+</body>
+</html>
