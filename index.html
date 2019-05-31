@@ -58,25 +58,66 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Tangerine&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet">
   </head>
+<style>
+.ani-button {
+    border-radius: 4px;
+    background-color: #ee1c25;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    
+}
 
+.ani-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.ani-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.ani-button:hover span {
+  padding-right: 25px;
+}
+
+.ani-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
 <style type="text/css">
   .referral-program {
-background-color: #ee1c25;
-color: #fff;
-cursor: pointer;
-font-size: 16px;
-text-align: center;
-padding: 5px 10px;
-font-weight: 700;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-top: 90px;
-right: 1%;
-border-radius: 30px;
-position: fixed;
-z-index: 100;
-transform: rotate(0deg);
+    background: linear-gradient(to bottom left, #d09898, #ee1c25);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 10px;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    top: 90px;
+    right: 1%;
+    border-radius: 7px;
+    position: fixed;
+    z-index: 100;
+    transform: rotate(0deg);
 }
 .navbar-custom {
     background-color: #000;
@@ -120,10 +161,10 @@ transform: rotate(0deg);
         <div class="titan-caption" style="background-color: ; padding-top: 30px;">
           <div class="caption-content">
             <div style="font-family: 'Dancing Script', cursive;color: #FFD700;" class="font-alt titan-title-size-1">
-              <img src="assets/images/custom/50th Logo.png" alt="50th-aniversary-Logo" width="350">
+              <img src="assets/images/custom/50th Logo.png" alt="50th-aniversary-Logo" width="375">
               <!-- <strong style="font-size: 24px; background: #2c3250; padding: 5px 10px; font-family: fantasy; border-radius: 30px; margin-top: 20px; font-weight: bold;">Celebrating 50th Anniversary</strong> -->
             </div>
-            <div  class="font-alt mb-40 titan-title-size-4">Sundaravel Match <br> Industries</div>
+            <div  class="font-alt mb-40 titan-title-size-4">Sundaravel Match Industries</div>
             <!-- <a class="section-scroll btn btn-border-w btn-round" href="#menu2">Learn More</a> -->
           </div>
         </div>
@@ -186,6 +227,9 @@ transform: rotate(0deg);
                   labels.</p>
                   
               </div> 
+              <div class="col-md-12 text-center">
+                <a href="/about-us/index.html"><button class="ani-button"><span>See More </span></button></a>
+              </div>
                 
             </div>
           </div>
@@ -783,44 +827,47 @@ transform: rotate(0deg);
                 padding: 10px;
                 color: #fff;
               }
-              .matches-container-row1{
+              /*.matches-container-row1{
                 background: url(assets/images/custom/Ex5.jpg) no-repeat;
-                /*background: url('http://www.europematch.eu/storage/app/media/matchboxes_bg.jpg') no-repeat;*/
-                /*background-size: cover;*/
+                background: url('http://www.europematch.eu/storage/app/media/matchboxes_bg.jpg') no-repeat;
+                background-size: cover;
                 background-size: 100%;
                 background-position: 0 25%;
-              }
+              }*/
               .matches-container-row2{
-                background: url(assets/images/custom/Ex5.jpg) no-repeat;
-                background-size: 100% 50%;
+                background: url(https://lh3.googleusercontent.com/-qoXrsj2Gfds/XO4ZRdpezgI/AAAAAAAAAPo/6Moq7uP0QlsJpktVFQGEwVuGY6Dpds3yQCK8BGAs/s0/2019-05-28.jpg) no-repeat;
+                background-size: 100% 75%;
                 background-position: 0 25%;
+                /*padding-left: 75px;*/
                 /*background: url('http://www.europematch.eu/storage/app/media/bookmatches_bg.jpg') no-repeat;*/
                 /*background-size: cover;*/
               }
-              .matches-container-row3{
+              /*.matches-container-row3{
                 background: url(assets/images/custom/Ex9.jpg)no-repeat;
                 background-size: 100%;
                 background-position: 0 25%;
-                /*background: url('http://www.europematch.eu/storage/app/media/fireplacematches_bg.jpg') no-repeat;*/
-                /*background-size: cover;*/
-              }
+                background: url('http://www.europematch.eu/storage/app/media/fireplacematches_bg.jpg') no-repeat;
+                background-size: cover;
+              }*/
               .matches-container-row4{
-                background: url(assets/images/custom/Ex7.jpg) no-repeat;
-                background-size: 100%;
+                background: url(assets/images/matches-parallex.jpg) no-repeat;
+                background-size: 100% 75%;
                 background-position: 0 25%;
+                /*padding-left: 75px;*/
                 /*background: url('http://www.europematch.eu/storage/app/media/extralongmatches_background.jpg') no-repeat;*/
                 /*background-size: cover;*/
               }
               .matches-container-row5{
-                background: url(assets/images/custom/Ex9.jpg) no-repeat;
-                background-size: 100% 50%;
+                background: url(https://lh3.googleusercontent.com/-qoXrsj2Gfds/XO4ZRdpezgI/AAAAAAAAAPo/6Moq7uP0QlsJpktVFQGEwVuGY6Dpds3yQCK8BGAs/s0/2019-05-28.jpg) no-repeat;
+                background-size: 100% 75%;
                 background-position: 0 25%;
+                /*padding-left: 75px;*/
                 /*background: url('http://www.europematch.eu/storage/app/media/tubes_bg_img.jpg') no-repeat;*/
                 /*background-size: cover;*/
               }
 
               .matches-container li{
-                height: 310px;
+                height: 150px;
                 width: 100%;
                 margin-bottom: 65px;
               }
@@ -873,8 +920,9 @@ transform: rotate(0deg);
                 /* for firefox 31 */
                 /*transform: rotateY(0deg);*/
                 /*background: linear-gradient(to bottom left, #ee1c25, #000);*/
-               background-image: linear-gradient(to top, #ff4500, #f65900, #ed6900, #e47500, #db800b);
+               background: linear-gradient(to bottom left, #DEDEDE, #747474);
                    border-radius: 15px;
+                   width: 165px;
               }
 
               /* back, initially hidden pane */
@@ -884,117 +932,174 @@ transform: rotate(0deg);
                 color: #fff;
                 text-align: center;
                 padding: 10px;
+                width: 165px;
               }
               .back h3{
-                font-size: 20px;
+                font-size: 12px;
                 font-weight: bold;
                 text-decoration: underline;
               }
               .back p{
                 margin: 0 0 10px;
                 font-size: 16px;
+                font-size: 10px;
               }
         </style>
-        <section class="" id="domestic" style="padding: 20px;">
+        <section class="" id="domestic" >
           <div class="container">
-            <h2 class="module-title"><strong>DOMESTIC</strong></h2>
+            <h2 class="text-center"><strong>DOMESTIC</strong></h2>
               
-              <br>
+              
               <!-- product 2 -->
               <h3 style="color: #000;"><strong>Card Board</strong></h3>
               <ul class="matches-container matches-container-row2">
-                <div class="col-md-3">
+                
+                <div class="col-md-2 col-md-offset-1">
                   <li class="product_image flip-container">
                     <div class="matches-box flipper">
                       <div class="front">
                         <!-- front content ontouchstart="this.classList.toggle('hover');" -->
                         <img src="assets/images/cb-deluxe.png" alt="sundaravelgroups"/>
-                        <h3 style="color: #fff" class="text-center">Deluxe</h3>
+                        <h4 style="color: #fff" class="text-center">Deluxe</h4>
                       </div>
                       <div class="back flip-rotate">
                         <!-- back content -->
-                        <h3 class="work-title">DELUXE</h3>
-                        <p>Size: (46 x 35 x 13) mm</p>
-                        <p>Number of sticks: 40’S</p>
-                        <p>Splint size: 40 mm</p>
-                        <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 10’s in printed paper 100’s in plain poly bag/ shrink</p>
+                        <div class="row">
+                          <h3 class="work-title">DELUXE</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>(46 x 35 x 13) mm</p>
+                            <p>40’S</p>
+                            <p>40 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </li>
-                  <br>
-                  <li class="product_image flip-container">
-                    <div class="matches-box flipper">
-                      <div class="front">
-                        <!-- front content ontouchstart="this.classList.toggle('hover');" -->
-                        <img src="assets/images/wax-raja-rani.png" width="100%" class="">
-                        <h3 style="color: #fff" class="text-center">Raja Rani</h3>
-                      </div>
-                      <div class="back flip-rotate">
-                        <!-- back content -->
-                        <h3 class="work-title">RAJA RANI</h3>
-                        <p>Size: ( 46 x 35 14) mm</p>
-                        <p>Number of sticks: 50’S</p>
-                        <p>Splint size: 40 mm</p>
-                        <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 10’s printed paper 100’s plain poly bag</p>
-                      </div>
-                    </div>
-                  </li>
+                  </li>                
                 </div>
 
-                <div class="col-md-3" style="margin-top: 65px;">
+                <div class="col-md-2" style="margin-top: 65px;">
                   <li class="product_image flip-container">
                     <div class="matches-box flipper">
                       <div class="front">
                         <!-- front content ontouchstart="this.classList.toggle('hover');" -->
                         <img src="assets/images/cb-hurricane.png" width="100%" class="">
-                        <h3 style="color: #fff" class="text-center">Hurricane</h3>
+                        <h4 style="color: #fff" class="text-center">Hurricane</h4>
                       </div>
                       <div class="back flip-rotate">
                         <!-- back content -->
-                        <h3 class="work-title">HURRICANE</h3>
-                          <p>Size: ( 46 x 35 x 12) mm</p>
-                          <p>Number of sticks: 35’S</p>
-                          <p>Splint size: 40 mm</p>
-                          <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 10’s /6’s in printed paper 100’s / 60’s plain poly bag</p>
+                        <div class="row">
+                          <h3 class="work-title">HURRICANE</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>(46 x 35 x 12) mm</p>
+                            <p>35’S</p>
+                            <p>40 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </li>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-2">
                   <li class="product_image flip-container">
                     <div class="matches-box flipper">
                       <div class="front">
                         <!-- front content ontouchstart="this.classList.toggle('hover');" -->
                         <img src="assets/images/cb-green-matches.png" width="100%" class="">
-                        <h3 style="color: #fff" class="text-center">Green Matches</h3>
+                        <h4 style="color: #fff" class="text-center">Green Matches</h4>
                       </div>
                       <div class="back flip-rotate">
                         <!-- back content -->
-                        <h3 class="work-title">GREEN MATCHES</h3>
-                        <p>Size: (46 x 35 x 12) mm</p>
-                        <p>Number of sticks: 40’S</p>
-                        <p>Splint size: 40 mm</p>
-                        <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 6’s / 10’s in printed paper 60’s / 100’s plain poly bag</p>
+                        <div class="row">
+                          <h3 class="work-title">GREEN MATCHES</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>(46 x 35 x 12) mm</p>
+                            <p>40’S</p>
+                            <p>40 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
+                        
                       </div>
                     </div>
                   </li>
                 </div>
-                <div class="col-md-3" style="margin-top: 65px;">
+                <div class="col-md-2" style="margin-top: 65px;">
                   <li class="product_image flip-container">
                     <div class="matches-box flipper">
                       <div class="front">
                         <!-- front content ontouchstart="this.classList.toggle('hover');" -->
                         <img src="assets/images/cb-trump.png" width="100%" class="">
-                        <h3 style="color: #fff;" class="text-center">Trump</h3>
+                        <h4 style="color: #fff;" class="text-center">Trump</h4>
                       </div>
                       <div class="back flip-rotate">
                         <!-- back content -->
-                        <h3 class="work-title">TRUMP</h3>
-                        <p>Size: ( 48.5 x 35 x 13) mm</p>
-                        <p>Number of sticks: 40’S</p>
-                        <p>Splint size: 40 mm</p>
-                        <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 10’s printed paper 100’s plain poly bag / shrink</p>
+                        <div class="row">
+                          <h3 class="work-title">TRUMP</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>( 48.5 x 35 x 13) mm</p>
+                            <p>40’S</p>
+                            <p>40 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </li>
+                </div>
+                <div class="col-md-2">
+                  <li class="product_image flip-container">
+                    <div class="matches-box flipper">
+                      <div class="front">
+                        <!-- front content ontouchstart="this.classList.toggle('hover');" -->
+                        <img src="assets/images/wax-raja-rani.png" width="100%" class="">
+                        <h4 style="color: #fff" class="text-center">Raja Rani</h4>
+                      </div>
+                      <div class="back flip-rotate">
+                        <!-- back content -->
+                        <div class="row">
+                          <h3 class="work-title">RAJA RANI</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>( 46 x 35 14) mm</p>
+                            <p>50’S</p>
+                            <p>40 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
+                        
                       </div>
                     </div>
                   </li>
@@ -1006,213 +1111,317 @@ transform: rotate(0deg);
 
               <h3 style="color: #000;"><strong>Special Matches</strong></h3>
               <ul class="matches-container matches-container-row4">
-                <div class="col-md-3" >
+                <div class="col-md-2 col-md-offset-1" >
                   <li class="product_image flip-container" >
                     <div class="matches-box flipper">
                       <div class="front">
                         <!-- front content ontouchstart="this.classList.toggle('hover');" -->
                         <img src="assets/images/veener.png" alt="sundaravelgroups"/>
-                        <h3 style="color: #fff;" class="text-center">Veneers</h3>
+                        <h4 style="color: #fff;" class="text-center">Veneers</h4>
                       </div>
                       <div class="back flip-rotate">
                         <!-- back content -->
-                        <h3 class="work-title"><strong style="color: #fff;">Veneers</strong></h3>
-                          <p>Size: (49 x 37 x 14)mm</p>
-                          <p>Number of sticks: 35’S</p>
-                          <p>Splint size: 40 mm</p>
-                          <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 10’s in blue colour paper</p>
+                        <div class="row">
+                          <h3 class="work-title">VENEERS</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>(49 x 37 x 14)mm</p>
+                            <p>35’S</p>
+                            <p>40 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </li>
-                  <li class="product_image flip-container">
-                    <div class="matches-box flipper">
-                      <div class="front">
-                        <!-- front content ontouchstart="this.classList.toggle('hover');" -->
-                        <img src="assets/images/sm-special-80.png" alt="sundaravelgroups"/>
-                        <h3 style="color: #fff" class="text-center">Special 80’S</h3> 
-                      </div>
-                      <div class="back flip-rotate">
-                        <!-- back content -->
-                        <h3 class="work-title">SPECIAL 80’S</h3>    
-                        <p>Size: ( 48.5 x 40 x 18) mm</p>
-                        <p>Number of sticks: 80’S</p>
-                        <p>Splint size: 40 mm</p>
-                        <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 6’s in printed paper 60’s in plain poly bag</p>
-                      </div>
-                    </div>
-                  </li>
+                  
                 </div>
-                <div class="col-md-3" style="margin-top: 65px;">
+                <div class="col-md-2" style="margin-top: 65px;">
                   <li class="product_image flip-container">
                     <div class="matches-box flipper">
                       <div class="front">
                         <!-- front content ontouchstart="this.classList.toggle('hover');" -->
                         <img src="assets/images/wax-spectrum.png" alt="sundaravelgroups"/>
-                        <h3 style="color: #fff;" class="text-center">Spectrum</h3>
+                        <h4 style="color: #fff;" class="text-center">Wax</h4>
                       </div>
                       <div class="back flip-rotate">
                         <!-- back content -->
-                        <h3 class="work-title">SPECTRUM</h3>
-                        <p>Size: ( 36 x 29 x 11) mm</p>
-                        <p>Number of sticks: 40’S</p>
-                        <p>Splint size: 30 mm</p>
-                        <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 10’s printed paper 100’s plain poly bag</p>
+                        <div class="row">
+                          <h3 class="work-title">SPECTRUM</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>( 36 x 29 x 11) mm</p>
+                            <p>40’S</p>
+                            <p>30 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </li>
-
                   
                 </div>
 
-                <div class="col-md-3" >
+                <div class="col-md-2" >
                   <li class="product_image flip-container">
                     <div class="matches-box flipper">
                       <div class="front">
                         <!-- front content ontouchstart="this.classList.toggle('hover');" -->
                         <img src="assets/images/sm-27.png" width="100%" class="">
-                        <h3 style="color: #fff" class="text-center"> Mini 80’S</h3>
+                        <h4 style="color: #fff" class="text-center"> Mini 80’S</h4>
                       </div>
                       <div class="back flip-rotate">
                         <!-- back content -->
-                        <h3 class="work-title">27 HOUSE HOLD MINI 80’S</h3>
-                          <p>Size: ( 55 x 48.5 x 14 ) mm</p>
-                          <p>Number of sticks: 80’S</p>
-                          <p>Splint size: 40 mm</p>
-                          <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 6’s in printed paper 60’s in plain poly bag</p>
+                        <div class="row">
+                          <h3 class="work-title">27 HOUSE HOLD MINI 80’S</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>( 55 x 48.5 x 14 ) mm</p>
+                            <p>80’S</p>
+                            <p>40 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
+                        
                       </div>
                     </div>
                   </li>
                 </div>
 
-                <div class="col-md-3" style="margin-top: 65px;">
+                <div class="col-md-2" style="margin-top: 65px;">
                   <li class="product_image flip-container">
                     <div class="matches-box flipper">
                       <div class="front">
                         <!-- front content ontouchstart="this.classList.toggle('hover');" -->
                         <img src="assets/images/sm-27-300s.png" width="100%" class="">
-                        <h3 style="color: #fff;" class="text-center"> Match 300’S</h3>
+                        <h4 style="color: #fff;" class="text-center"> Match 300’S</h4>
                       </div>
                       <div class="back flip-rotate">
                         <!-- back content -->
-                        <h3 class="work-title">27 QUALITY MATCH 300’S</h3>
-                        <p>Size: ( 114 x 65 x 25) mm</p>
-                        <p>Number of sticks: 300’S</p>
-                        <p>Splint size: 48 mm, Carbonized</p>
-                        <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 10’s in plain poly bag</p>
+                        <div class="row">
+                          <h3 class="work-title">27 QUALITY MATCH 300’S</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>( 114 x 65 x 25) mm</p>
+                            <p>300’S</p>
+                            <p>48 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
+                        
                       </div>
                     </div>
                   </li>
                 </div>
-
+                <div class="col-md-2">
+                  <li class="product_image flip-container">
+                    <div class="matches-box flipper">
+                      <div class="front">
+                        <!-- front content ontouchstart="this.classList.toggle('hover');" -->
+                        <img src="assets/images/sm-special-80.png" alt="sundaravelgroups"/>
+                        <h4 style="color: #fff" class="text-center">Special 80’S</h4> 
+                      </div>
+                      <div class="back flip-rotate">
+                        <!-- back content -->
+                        <div class="row">
+                          <h3 class="work-title">SPECIAL 80’S</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>( 48.5 x 40 x 18) mm</p>
+                            <p>80’S</p>
+                            <p>48 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </li>
+                </div>
               </ul>
             </div>
         </section>
-        <section style="padding: 50px;" id="export">
+        <section  id="export">
           <div class="container">
             <!-- product 5 -->
             <h2 style="color: #000;" class="text-center"><strong>EXPORT</strong></h2>
             <h3 style="color: #000;"><strong>Safety Matches</strong></h3>
             <ul class="matches-container matches-container-row5">
-              <div class="col-md-4">
-                <li class="product_image flip-container">
-                  <div class="matches-box flipper">
-                    <div class="front">
-                      <!-- front content ontouchstart="this.classList.toggle('hover');" -->
-                      <img src="assets/images/sm-kiboko.png" alt="sundaravelgroups"/>
-                      <h3 style="color: #fff;" class="text-center">Kiboko</h3>
-                    </div>
-                    <div class="back flip-rotate">
-                      <!-- back content -->
-                      <h3 class="work-title">KIBOKO</h3>
-                        <p>Size: ( 51 x 35 x 14 ) mm</p>
-                        <p>Number of sticks: 40’S</p>
-                        <p>Splint size: 40 mm</p>
-                        <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 10’s in printed wrapper, 100’s in printed poly bag and 1000’s in 3 ply printed carton box</p>
-                    </div>
-                  </div>
-                </li>
-                <br>
+              <div class="col-md-2 col-md-offset-1">
                 <li class="product_image flip-container">
                   <div class="matches-box flipper">
                     <div class="front">
                       <!-- front content ontouchstart="this.classList.toggle('hover');" -->
                       <img src="assets/images/elephant-new.png" alt="sundaravelgroups"/>
-                      <h3 style="color: #fff;" class="text-center">Elephant</h3>
+                      <h4 style="color: #fff;" class="text-center">Elephant</h4>
                     </div>
                     <div class="back flip-rotate">
                       <!-- back content -->
-                      <h3 class="work-title">ELEPHANT</h3>
-                      <p>Size: ( 51 x 35 x 14) mm</p>
-                      <p>Number of sticks: 40’S</p>
-                      <p>Splint size: 40/42 mm</p>
-                      <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 10’s in Grey paper, 100’s in printed poly bag and 1000’s in 3 ply carton box</p>
+                      <div class="row">
+                          <h3 class="work-title">ELEPHANT</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>( 51 x 35 x 14) mm</p>
+                            <p>40’S</p>
+                            <p>40/42 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
                     </div>
                   </div>
-                </li>
+                </li> 
               </div>
 
-              <div class="col-md-4" style="margin-top: 65px;">
+              <div class="col-md-2" style="margin-top: 65px;">
                 <li class="product_image flip-container">
                   <div class="matches-box flipper">
                     <div class="front">
                       <!-- front content ontouchstart="this.classList.toggle('hover');" -->
                       <img src="assets/images/sm-golden-horse.png" width="100%" class="">
-                      <h3 style="color: #fff;" class="text-center">Golden Horse</h3>
+                      <h4 style="color: #fff;" class="text-center">Golden Horse</h4>
                     </div>
                     <div class="back flip-rotate">
                       <!-- back content -->
-                      <h3 class="work-title">GOLDEN HORSE</h3>
-                      <p>Size: ( 49 x 35 x 13) mm</p>
-                      <p>Number of sticks: 40’S</p>
-                      <p>Splint size: 40 mm , Carbonized</p>
-                      <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 10’s in PVC sheet, 100’s in shrink wrap and 1000’s in 3 ply printed carton box</p>
+                        <div class="row">
+                          <h3 class="work-title">GOLDEN HORSE</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>( 49 x 35 x 13) mm</p>
+                            <p>40’S</p>
+                            <p>40 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
                     </div>
                   </div>
                 </li>
-                <br>
                 
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-2">
                 <li class="product_image flip-container">
                   <div class="matches-box flipper">
                     <div class="front">
                       <!-- front content ontouchstart="this.classList.toggle('hover');" -->
                       <img src="assets/images/falcon-new.png" width="100%" class="">
-                      <h3 style="color: #fff" class="text-center">Falcon</h3>
+                      <h4 style="color: #fff" class="text-center">Falcon</h4>
                     </div>
                     <div class="back flip-rotate">
                       <!-- back content -->
-                      <h3 class="work-title">FALCON</h3>
-                      <p>Size: ( 51 x 35 x 14) mm</p>
-                      <p>Number of sticks: 40’S</p>
-                      <p>Splint size: 40/42 mm, Carbonized</p>
-                      <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 10’s in printed paper, 100’s in printed poly bag and 500’s in 3 ply carton box</p>
+                      <div class="row">
+                          <h3 class="work-title">FALCON</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>( 51 x 35 x 14) mm</p>
+                            <p>40’S</p>
+                            <p>40/42 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
                     </div>
                   </div>
                 </li>
               </div>
 
-              <div class="col-md-4" style="margin-top: 65px;">
+              <div class="col-md-2" style="margin-top: 65px;">
                 <li class="product_image flip-container">
                   <div class="matches-box flipper">
                     <div class="front">
                       <!-- front content ontouchstart="this.classList.toggle('hover');" -->
                       <img src="assets/images/flamingo-new5.png" width="100%" class="">
-                      <h3 style="color: #fff" class="text-center">Flamingo</h3>
+                      <h4 style="color: #fff" class="text-center">Flamingo</h4>
                     </div>
                     <div class="back flip-rotate">
                       <!-- back content -->
-                      <h3 class="work-title">FLAMINGO</h3>
-                      <p>Size: ( 51 x 35 x 14) mm</p>
-                      <p>Number of sticks: 40’S</p>
-                      <p>Splint size: 40 mm, Carbonized</p>
-                      <p>Standard packaging : 600 boxes per bundle/1000 boxes per carton 10’s in PVC sheet, 100’s in shrink wrap and 1000’s in printed 4 colour white carton box</p>
+                        <div class="row">
+                          <h3 class="work-title">FLAMINGO</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>( 51 x 35 x 14) mm</p>
+                            <p>40’S</p>
+                            <p>40 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
                     </div>
                   </div>
                 </li>
               </div>
-              
+              <div class="col-md-2">
+                <li class="product_image flip-container">
+                  <div class="matches-box flipper">
+                    <div class="front">
+                      <!-- front content ontouchstart="this.classList.toggle('hover');" -->
+                      <img src="assets/images/sm-kiboko.png" alt="sundaravelgroups"/>
+                      <h4 style="color: #fff;" class="text-center">Kiboko</h4>
+                    </div>
+                    <div class="back flip-rotate">
+                      <!-- back content -->
+                      <div class="row">
+                          <h3 class="work-title">KIBOKO</h3>
+                          <div class="col-md-6" style="text-align: right;padding: 0px;">
+                            <p><strong>Size: </strong></p>
+                            <p><strong>Number of sticks: </strong></p>
+                            <p><strong>Splint size: </strong></p>
+                            <p><strong>Standard packaging: </strong></p>
+                          </div>
+                          <div class="col-md-6 text-left">
+                            <p>( 51 x 35 x 14) mm</p>
+                            <p>40’S</p>
+                            <p>40 mm</p>
+                            <p>600 boxes/bundle </p>
+                          </div>
+                        </div>
+                      
+                    </div>
+                  </div>
+                </li>
+              </div>
 
             </ul>
           </div>
@@ -1528,8 +1737,9 @@ transform: rotate(0deg);
               </div>
               <div class="col-sm-6 col-md-3 col-lg-3">
                 <div class="count-item mb-sm-40">
-                  <div class="count-icon"><span class="icon-trophy"></span></div>
+                  <!-- <div class="count-icon"><span class="icon-trophy"></span></div> -->
                   <!-- <h3 class="count-to font-alt" data-countto="1000000000"></h3> -->
+                  <i style="font-size: 50px;" class="fas fa-box-open"></i>
                   <h5 class="count-title font-serif">ONE BILLION</h5>
                   <h5 class="count-title font-serif">  MATCH BOXES A YEAR</h5>
                 </div>
@@ -1591,16 +1801,21 @@ transform: rotate(0deg);
         <section  id="infrastructure" style="padding-top: 50px;">
           <div class="container">
             <div class="row">
-              <div class="col-md-6 text-justify" style="padding-top: 50px;">
-                <img class="polaroid" src="assets/images/matches-infra5.jpg" alt="sundaravelgroup-infrastructure" width="100%">
-              </div> 
-              <div class="col-md-6 text-justify">
+              
+              <div class="col-md-12 text-justify">
                 <h2 class="module-title">INFRASTRUCTURE </h2>
                   <p style="font-size: 17px;">Sundaravel Group provides 2000+ direct employment and additional indirect employment to 1000+families.</p>
                   <p style="font-size: 17px;">We have fully automatic production line to ensure a safe work environment for our employees and create a high-quality product without compromising at any level during the production process. We have machines to conduct quality checks at various stages starting from raw materials to finally placing the right count during the packaging. The process is fine-tuned to the last mile to ensure our clients get safe and quality products.</p>
-                  
               </div> 
-                
+              <div class="col-md-4 text-justify" style="padding-top: 50px;">
+                <img class="polaroid" src="assets/images/IMG_3851-new.jpg" alt="sundaravelgroup-infrastructure" width="100%">
+              </div> 
+              <div class="col-md-4 text-justify" style="padding-top: 50px;">
+                <img class="polaroid" src="assets/images/IMG_4188-new.jpg" alt="sundaravelgroup-infrastructure" width="100%">
+              </div> 
+              <div class="col-md-4 text-justify" style="padding-top: 50px;">
+                <img class="polaroid" src="assets/images/IMG_3852-new.jpg" alt="sundaravelgroup-infrastructure" width="100%">
+              </div> 
             </div>
           </div>
         </section>
@@ -1864,43 +2079,267 @@ transform: rotate(0deg);
             </div>
           </div>
         </section> -->
-        <section id="contact" class="module bg-dark-60 request-cta" data-background="assets/images/matches-parallex.jpg">
+        <!-- <section id="contact" class="module bg-dark-60 request-cta" data-background="assets/images/matches-parallex.jpg">
           <div class="container">
             <div class="row">
               <div class="col-sm-12 text-center">
                 <h2 class="font-alt">CONTACT US</h2>
                 <p> Just submit your details </p>
               </div>
-              <div class="col-sm-12 text-center">
+              <div class="col-sm-12 ">
                 <div class="row">
                   <form class="form rqst-form" id="requestACall" role="form" method="post" action="php/request_call.php">
                     <div class="form-group col-sm-6 col-xs-12">
                       <input class="form-control input-lg" type="text" name="name" placeholder="Name"/>
-                    </div>
-                    <div class="form-group col-sm-6 col-xs-12">
+                      <br>
+                      <input class="form-control input-lg" type="text" name="company_name" placeholder="Company Name"/>
+                      <br>
+                      <input class="form-control input-lg" type="text" name="phone" placeholder="Phone Number"/>
+                      <br>
+                      <input class="form-control input-lg" type="email" name="email" placeholder="Email"/>
+                      <br>
+                      
                       <select class="form-control input-lg" name="subject">
-                        <option value="subject1" disabled="" selected="">Company</option>
+                        <option value="subject1" disabled="" selected="">Subject</option>
                         <option value="Matches">Matches</option>
                         <option value="Printing">Printing</option>
                         <option value="Timber">Timber</option>
                         <option value="chemicals">chemicals</option>
                         <option value="other_business">other business</option>
-                        
                       </select>
-                    </div>
-                    <div class="form-group col-sm-6 col-xs-12">
-                      <input class="form-control input-lg" type="text" name="phone" placeholder="Phone Number"/>
-                    </div>
-                    <div class="form-group col-sm-6 col-xs-12">
+
+                      <br>
                       <button class="btn btn-border-w btn-circle btn-block" id="racSubmit" type="submit"><i class="fa fa-paper-plane-o"></i> Submit</button>
+                      <div id="requestFormResponse"></div>
                     </div>
-                    <div id="requestFormResponse"></div>
-                  </form>
+                    </form>
+                    <div class=" col-sm-6 col-xs-12">
+                      <div>
+                        <ul style="float: left;list-style: none;">   
+
+                          <li>
+                            <h6 style="font-size: 15px;" ><i class="fas fa-phone-square" style="font-size: 40px;color: #fff;padding: 25px;"></i>Phone: + 91 - 4562 - 272 147 / 272 328</h6>
+                          </li>
+
+                          <li>
+                            <h6 style="font-size: 15px;"><i class="fas fa-envelope" style="font-size: 40px;color: #fff;padding: 25px;"></i> Email: enquiry@sundaravelgroup.com</h6>
+                          </li>
+
+                          <li>
+                            <h6 style="font-size: 15px;"><i class="fas fa-globe-europe" style="font-size: 40px;color: #fff;padding: 25px;"></i> 69, A.S.K. Thangaiah Road, Siavkasi 626 123 TN, India.</h6>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                    
                 </div>
               </div>
             </div>
           </div>
         </section>
+ -->
+        <style type="text/css">
+          .pb-100 {
+              padding-bottom: 50px;
+            }
+            .pt-100 {
+              padding-top: 50px;
+            }
+            .mb-100 {
+              margin-bottom: 50px;
+            }
+            a {
+              text-decoration: none;
+              color: #333;
+              -webkit-transition: .4s;
+              transition: .4s;
+            }
+            .section-title {
+              position: relative;
+            }
+            .section-title p {
+              font-size: 16px;
+              margin-bottom: 5px;
+              font-weight: 400;
+            }
+            .section-title h4 {
+              font-size: 40px;
+              font-weight: 600;
+              text-transform: capitalize;
+              position: relative;
+              padding-bottom: 20px;
+              display: inline-block;
+            }
+            /*.section-title h4::before {
+              position: absolute;
+              content: "";
+              width: 80px;
+              height: 2px;
+              background-color: #d8d8d8;
+              bottom: 0;
+              left: 50%;
+              margin-left: -40px;
+            }
+            .section-title h4::after {
+              position: absolute;
+              content: "";
+              width: 50px;
+              height: 2px;
+              background-color: #ee1c25;
+              left: 0;
+              bottom: 0;
+              left: 50%;
+              margin-left: -25px;
+            }*/
+            .contact {
+              background-image: url("assets/images/matches-parallex.jpg");
+              background-size: cover;
+              background-position: center;
+              background-attachment: fixed;
+              position: relative;
+              z-index: 2;
+              color: #fff;
+            }
+            .contact-form input,
+            textarea {
+              width: 80%;
+              border: 1px solid #fff;
+              padding: 5px 10px;
+              text-transform: capitalize;
+              margin-top: 15px;
+              background-color: #fff;
+              color: #fff;
+            }
+            .contact:before {
+              position: absolute;
+              content: "";
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              background-color: #333;
+              z-index: -1;
+              opacity: .85;
+              -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+            }
+            .single-contact {
+              text-align: left;
+              position: relative;
+              padding-left: 70px;
+              margin-bottom: 50px;
+              margin-top: 10px;
+            }
+            .single-contact i.fa {
+              position: absolute;
+              left: 0;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+                      transform: translateY(-50%);
+              background-color: #ee1c25;
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              text-align: center;
+              border-radius: 3px;
+            }
+            .single-contact h5 {
+              font-size: 18px;
+              margin-bottom: 10px;
+              font-weight: 500;
+            }
+            .single-contact p {
+              font-size: 15px;
+              font-weight: 400;
+            }
+            .contact-form input[type="submit"] {
+              background-color: #ee1c25;
+              border: 0px;
+              cursor: pointer;
+              font-size: 16px;
+              -webkit-transition: .4s;
+              transition: .4s
+            }
+            .contact-form input[type="submit"]:hover {
+              background-color: #fff;
+              color: #ee1c25;
+            }
+            .contact-form input:focus, textarea:focus {
+              border-color: #CC5B00
+            }
+            select.input-lg {
+              height: 35px;
+              line-height: 46px;
+              width: 80%;
+              margin: auto;
+          }
+        </style>
+
+    <section class="contact pt-100 pb-100" id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 mx-auto text-center">
+                  <div class="section-title mb-100">
+                     
+                     <h4>Contact Us</h4>
+                     <p>Just submit your details</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row text-center">
+                  <div class="col-md-6">
+                     <form action="#" class="contact-form">
+                        <div class="row">
+                           <div class="col-xl-6">
+                              <input type="text" placeholder="Name">
+                           </div>
+                           <div class="col-xl-6">
+                              <input type="text" placeholder="Company Name">
+                           </div>
+                           <div class="col-xl-6">
+                              <input type="text" placeholder="Email">
+                           </div>
+                           <div class="col-xl-6">
+                              <input type="text" placeholder="Telephone">
+                           </div>
+                           <br>
+                           <select class="form-control input-lg" name="subject">
+                            <option value="subject1" disabled="" selected="">Subject</option>
+                            <option value="Matches">Matches</option>
+                            <option value="Printing">Printing</option>
+                            <option value="Timber">Timber</option>
+                            <option value="chemicals">chemicals</option>
+                            <option value="other_business">other business</option>
+                          </select>
+                           <div class="col-xl-12">
+                              <!-- <textarea placeholder="message" cols="30" rows="10"></textarea> -->
+                              <input type="submit" value="send message">
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-6"> 
+                     
+                     <div class="single-contact">
+                        <i class="fa fa-phone"></i>
+                        <h5>Phone</h5>
+                        <p>+ 91 - 4562 - 272 147 / 272 328</p>
+                     </div>
+                     <div class="single-contact">
+                        <i class="fa fa-envelope"></i>
+                        <h5>Email</h5>
+                        <p>enquiry@sundaravelgroup.com</p>
+                     </div>
+                     <div class="single-contact">
+                        <i class="fa fa-map-marker"></i>
+                        <h5>Address</h5>
+                        <p>69, A.S.K. Thangaiah Road, Siavkasi 626 123 TN, India.</p>
+                     </div>
+                  </div>
+            </div>
+         </div>
+      </section>
+
         <!-- <section class="module" id="news">
           <div class="container">
             <div class="row">
