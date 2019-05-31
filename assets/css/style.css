@@ -7,13 +7,15 @@ html {
   overflow-x: hidden;
   -ms-overflow-style: scrollbar;
   scroll-behavior: smooth;
+  transition: all .3s ease;
 }
 
 body {
   background: #fff;
-  font: 400 12px/1.8 "Open Sans", sans-serif;
+  /*font: 400 12px/1.8 "Open Sans", sans-serif;*/
   color: #666;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Allerta Stencil', sans-serif !important;
 }
 
 img {
@@ -686,7 +688,8 @@ a,
 --------------------------------------------------------------*/
 .btn {
   border-radius: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  /*font-family: "Roboto Condensed", sans-serif;*/
+  font-family: 'Allerta Stencil', sans-serif !important;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -850,7 +853,8 @@ a,
 
 /* Forms common style */
 .form-control {
-  font-family: "Roboto Condensed", sans-serif;
+  /*font-family: "Roboto Condensed", sans-serif;*/
+  font-family: 'Allerta Stencil', sans-serif !important;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -926,13 +930,15 @@ blockquote {
 }
 
 .font-alt {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Allerta Stencil', sans-serif !important;
+  /*font-family: "Roboto Condensed", sans-serif;*/
   /*text-transform: uppercase;*/
   letter-spacing: 2px;
 }
 
 .font-serif {
-  font-family: Volkhov, "Times New Roman", sans-serif;
+  /*font-family: Volkhov, "Times New Roman", sans-serif;*/
+  font-family: 'Allerta Stencil', sans-serif !important;
   font-style: italic;
 }
 
@@ -1281,7 +1287,8 @@ General Styles - Owlcarousel
   border: 0;
   border-radius: 0;
   z-index: 1000;
-  font-family: "Roboto Condensed", sans-serif;
+  /*font-family: "Roboto Condensed", sans-serif;*/
+  font-family: 'Allerta Stencil', sans-serif !important;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 11px;
