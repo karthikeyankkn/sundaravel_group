@@ -307,9 +307,9 @@ a:focus, .button:focus, button:focus, .btn:focus {
 
 /* line 171, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_common.scss */
 .section_tittle p {
-  color: #ff1481;
+  color: #ee1c25;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10px;
   margin-bottom: 17px;
   text-transform: uppercase;
   line-height: 14px;
@@ -3151,10 +3151,11 @@ ul {
 
 /* line 19, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_cta_part.scss */
 .cta_part .cta_part_iner .cta_part_text p {
-  color: #ff1481;
+  color: #ee1c25;
   text-transform: uppercase;
   margin-bottom: 10px;
   font-weight: 500;
+  font-size: 12px;
 }
 
 /* line 25, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_cta_part.scss */
