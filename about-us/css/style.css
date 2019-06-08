@@ -12,11 +12,23 @@
 /* line 3, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_common.scss */
 body {
   font-family: "Roboto", sans-serif;
+  /*font-family: inherit;*/
   padding: 0;
   margin: 0;
   font-size: 14px;
 }
-
+header{
+font-family: "Roboto", sans-serif;
+}
+footer{
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px !important;
+    border: 1px solid transparent;
+}
 /* line 9, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_common.scss */
 .message_submit_form:focus {
   outline: none;
@@ -2520,7 +2532,7 @@ ul {
   font-size: 15px;
   padding: 9px 24px !important;
   font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 500;
 }
 
@@ -7786,7 +7798,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_footer.scss */
 .footer-area {
   background-color: #162b45;
-  padding: 100px 0px 20px;
+  padding: 30px 0px 20px;
 }
 
 @media (max-width: 991px) {
@@ -7823,9 +7835,11 @@ h1, h2, h3, h4, h5, h6 {
 /* line 25, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_footer.scss */
 .footer-area .single-footer-widget h4 {
   margin-bottom: 23px;
-  font-weight: 700;
-  font-size: 24px;
-  color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding: 5px;
 }
 
 @media (max-width: 1024px) {
@@ -8056,7 +8070,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-area .copyright_part_text {
   border-top: 1px solid #45556a;
   padding-top: 20px;
-  margin-top: 95px;
+  margin-top: 50px;
 }
 
 /* line 199, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_footer.scss */
