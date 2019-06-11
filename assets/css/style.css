@@ -16,7 +16,10 @@ body {
   color: #666;
   -webkit-font-smoothing: antialiased;
   /*font-family: 'Allerta Stencil', sans-serif !important;*/
-  font-family: "Roboto", sans-serif !important;
+  /*font-family: "Roboto", sans-serif !important;*/
+  /*font-family: "Helvetica Neue" !important;*/
+  /*font-family: open Sans !important;*/
+  font-family: avenir !important;
 }
 
 img {
@@ -691,7 +694,8 @@ a,
   border-radius: 0;
   /*font-family: "Roboto Condensed", sans-serif;*/
   /*font-family: 'Allerta Stencil', sans-serif !important;*/
-  font-family: "Roboto", sans-serif !important;
+  /*font-family: "Roboto", sans-serif !important;*/
+  font-family: avenir !important;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -857,7 +861,8 @@ a,
 .form-control {
   /*font-family: "Roboto Condensed", sans-serif;*/
   /*font-family: 'Allerta Stencil', sans-serif !important;*/
-  font-family: "Roboto", sans-serif !important;
+  /*font-family: "Roboto", sans-serif !important;*/
+  font-family: avenir !important;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -909,7 +914,7 @@ a:hover, a:focus {
 }
 
 .bg-dark a {
-  color: #aaa;
+  color: #fff !important;
 }
 
 .bg-dark a:hover, .bg-dark a:focus {
@@ -917,7 +922,7 @@ a:hover, a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.4;
+  line-height: 1;
   font-weight: 400;
 }
 
@@ -933,7 +938,8 @@ blockquote {
 }
 
 .font-alt {
-  font-family: "Roboto", sans-serif !important;
+  font-family: avenir !important;
+  /*font-family: "Roboto", sans-serif !important;*/
   /*font-family: 'Allerta Stencil', sans-serif !important;*/
   /*font-family: "Roboto Condensed", sans-serif;*/
   /*text-transform: uppercase;*/
@@ -943,7 +949,8 @@ blockquote {
 .font-serif {
   /*font-family: Volkhov, "Times New Roman", sans-serif;*/
   /*font-family: 'Allerta Stencil', sans-serif !important;*/
-  font-family: "Roboto", sans-serif !important;
+  /*font-family: "Roboto", sans-serif !important;*/
+  font-family: avenir !important;
   font-style: italic;
 }
 
@@ -1288,17 +1295,20 @@ General Styles - Owlcarousel
 	Navbar
 --------------------------------------------------------------*/
 .navbar-custom {
+  box-shadow: 0px 0px 10px #000;
   background-color: #ee1c25;
   border: 0;
   border-radius: 0;
   z-index: 1000;
   /*font-family: "Roboto Condensed", sans-serif;*/
   /*font-family: 'Allerta Stencil', sans-serif !important;*/
-  font-family: "Roboto", sans-serif !important;
+  /*font-family: "Roboto", sans-serif !important;*/
+  font-family: avenir !important;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 11px;
   transition: background, padding 0.4s ease-in-out 0s;
+  
 }
 
 .navbar a {
@@ -1325,6 +1335,7 @@ General Styles - Owlcarousel
     color: #fff;
     font-size: 15px;
     text-transform: initial;
+    font-weight: bold;
 }
 
 .navbar-custom .dropdown-menu > li > a {
@@ -1429,6 +1440,7 @@ General Styles - Owlcarousel
   width: 100%;
   z-index: 0;
   background-size: cover;
+  
 }
 
 .titan-title-size-1 {
@@ -1449,9 +1461,12 @@ General Styles - Owlcarousel
 }
 
 .titan-title-size-4 {
-  letter-spacing: 10px;
+  letter-spacing: 2px;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 78px;
+  font-weight: bold;
+  font-family: "Helvetica Neue" !important;
+}
 }
 
 /* Agency Page Header */
@@ -2418,6 +2433,7 @@ Google map
   font-size: 14px;
   padding: 0 0 10px;
   margin: 0 0 15px;
+  width: 50%;
 }
 
 .widget ul {
@@ -2433,7 +2449,7 @@ Google map
 
 .widget .icon-list li a:before {
   content: "\00BB";
-  color: #666666;
+  color: #fff;
   padding-right: 5px;
 }
 
