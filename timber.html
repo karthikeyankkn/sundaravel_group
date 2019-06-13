@@ -51,11 +51,16 @@
     background: linear-gradient(to left, #27f50e, #00af50);
     box-shadow: 0px 0px 10px #000;
   }
+  .work-image {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 2px #0000004d;
+}
     .sundaravel-contct-us {
     background-color: #00b050 !important;
     top: 100px !important;}
     .bg-dark {
-    background: #00b050;
+    background: linear-gradient(to left, #27f50e, #00af50);
     }
     .side-navbar-container ul li {
     padding: 2px 5px;
@@ -83,7 +88,7 @@
 </style>
 <style type="text/css">
   .sundaravel-contct-us {
-    background: linear-gradient(to bottom left, #d09898, #00af50);
+    background: linear-gradient(to left, #27f50e, #00af50);
     color: #fff;
     cursor: pointer;
     font-size: 16px;
@@ -209,135 +214,7 @@
               transition: .5s cubic-bezier(.3, 0, 0, 1.3)
             }
         </style>
-        <style type="text/css">
-                      /*
-            Fade content bs-carousel with hero headers
-            Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-            Image credits: unsplash.com
-            */
-
-            /********************************/
-            /*       Fade Bs-carousel       */
-            /********************************/
-            .fade-carousel {
-                position: relative;
-                height: 100vh;
-            }
-            .fade-carousel .carousel-inner .item {
-                height: 100vh;
-            }
-            .fade-carousel .carousel-indicators > li {
-                margin: 0 2px;
-                background-color: #ee1c25;
-                border-color: #ee1c25;
-                opacity: .7;
-            }
-            .fade-carousel .carousel-indicators > li.active {
-              width: 10px;
-              height: 10px;
-              opacity: 1;
-            }
-
-            /********************************/
-            /*          Hero Headers        */
-            /********************************/
-            .hero {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                z-index: 3;
-                color: #fff;
-                background-color: #00000085;
-                text-align: center;
-                text-transform: uppercase;
-                text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-                  -webkit-transform: translate3d(-50%,-50%,0);
-                     -moz-transform: translate3d(-50%,-50%,0);
-                      -ms-transform: translate3d(-50%,-50%,0);
-                       -o-transform: translate3d(-50%,-50%,0);
-                          transform: translate3d(-50%,-50%,0);
-            }
-            .hero h1 {
-                font-size: 3em;    
-                font-weight: bold;
-                margin: 0;
-                padding: 10px;
-            }
-
-            .fade-carousel .carousel-inner .item .hero {
-                opacity: 0;
-                -webkit-transition: 2s all ease-in-out .1s;
-                   -moz-transition: 2s all ease-in-out .1s; 
-                    -ms-transition: 2s all ease-in-out .1s; 
-                     -o-transition: 2s all ease-in-out .1s; 
-                        transition: 2s all ease-in-out .1s; 
-            }
-            .fade-carousel .carousel-inner .item.active .hero {
-                opacity: 1;
-                -webkit-transition: 2s all ease-in-out .1s;
-                   -moz-transition: 2s all ease-in-out .1s; 
-                    -ms-transition: 2s all ease-in-out .1s; 
-                     -o-transition: 2s all ease-in-out .1s; 
-                        transition: 2s all ease-in-out .1s;    
-            }
-
-            /********************************/
-            /*            Overlay           */
-            /********************************/
-            .overlay {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                z-index: 2;
-                /*background-color: #080d15b8;*/
-                opacity: .7;
-            }
-
-            /********************************/
-            /*          Custom Buttons      */
-            /********************************/
-            .btn.btn-lg {padding: 10px 40px;}
-            .btn.btn-hero,
-            .btn.btn-hero:hover,
-            .btn.btn-hero:focus {
-                color: #f5f5f5;
-                background-color: #1abc9c;
-                border-color: #1abc9c;
-                outline: none;
-                margin: 20px auto;
-            }
-
-            /********************************/
-            /*       Slides backgrounds     */
-            /********************************/
-            .fade-carousel .slides .slide-1, 
-            .fade-carousel .slides .slide-2,
-            .fade-carousel .slides .slide-3 {
-              height: 100vh;
-              background-size: cover;
-              background-position: center center;
-              background-repeat: no-repeat;
-            }
-            .fade-carousel .slides .slide-1 {
-              background-image: url(assets/images/timber-banner3.jpg); 
-            }
-            .fade-carousel .slides .slide-2 {
-              background-image: url(assets/images/timber-banner1.jpg);
-            }
-            .fade-carousel .slides .slide-3 {
-              background-image: url(assets/images/timber-banner-2.jpg);
-            }
-
-            /********************************/
-            /*          Media Queries       */
-            /********************************/
-            @media screen and (min-width: 980px){
-                .hero { width: 980px; }    
-            }
-            @media screen and (max-width: 640px){
-                .hero h1 { font-size: 4em; }    
-            }
-        </style>
+        
 
         <style type="text/css">
          
@@ -426,58 +303,140 @@
         </section> -->
 
         
-        <section >
-          <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="8000" id="bs-carousel">
-            <!-- Overlay -->
-            <div class="overlay"></div>
+        <style type="text/css">
+          
+        .carousel-control.left
+      {
+        background: none;
+      }
+      .carousel-control.right
+      {
+        background: none;
+      }
 
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#bs-carousel" data-slide-to="1"></li>
-              <li data-target="#bs-carousel" data-slide-to="2"></li>
-            </ol>
-            
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item slides active">
-                <div class="slide-1"></div>
-                <div class="hero">
-                  <hgroup>
-                      <h1>High quality poplar logs imported from Germany and Belgium</h1>        
-                      <!-- <h3>Get start your next awesome project</h3> -->
-                  </hgroup>
-                  <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
-                </div>
+      .carousel-control
+      {
+        position: absolute;
+        top: 45%;
+        bottom: 0;
+        left: 0;
+        width: 15%;
+        font-size: auto;
+        color: #fff;
+        text-align: center;
+        opacity: 1;
+        text-shadow: none;
+      }
+      .carousel-control:hover
+      {
+        color: #000;
+      }
+      .carousel-indicators
+      {
+        bottom: -50px;
+      }
+      .carousel-indicators li
+      {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #000\9;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid #05b847;
+        border-radius: 50%;
+      }
+      .carousel-indicators .active
+      {
+        width: 12px;
+        height: 12px;
+        margin: 0;
+        background-color: #05b847;
+      }
+      .carousel-caption
+      {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: left;
+        
+        background: rgba(0,0,0,0.4);
+      }
+      .carousel-caption h2 {
+      margin-left: 10%;
+      font-size: 50px;
+      }
+      .carousel-caption p {
+      margin-left: 10%;
+      }
+      .carousel-inner>.item>img {
+          line-height: 1;
+          height: 600px;
+          width: 100%;
+      }
+        </style>
+        <section>
+
+              <div class="container-fluid">
+                  <!-- Indicators -->
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                              <img src="assets/images/timber-new-ban1.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2><strong>Workmanship</strong></h2>
+                                  <p><strong>We use the finest of tools to manufacture splints <br> of precise dimensions and aesthetics </strong></p>
+                                 
+                              </div>
+                          </div>
+                          <div class="item">
+                              <img src="assets/images/timber-new-ban2.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2><strong>Imported Timber</strong></h2>
+                                  <p><strong>We use the finest of timber imported from Germany <br> and Belgium to product high quality splints</strong></p>
+                                 
+                              </div>
+                          </div>
+                          <div class="item">
+                              <img src="assets/images/timber-banner-2.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2><strong>Finishing</strong></h2>
+                                  <p><strong>Entire processing and finishing of match splints is <br> done at our own in-house facility</strong></p>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                          <span class="fa fa-angle-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                          <span class="fa fa-angle-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                      <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                  </div>
               </div>
-              <div class="item slides">
-                <div class="slide-2"></div>
-                <div class="hero">        
-                  <hgroup>
-                      <!-- <h1>Employee Friendly Environment</h1>         -->
-                      <!-- <h3>Get start your next awesome project</h3> -->
-                  </hgroup>       
-                  <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
-                </div>
-              </div>
-              <div class="item slides">
-                <div class="slide-3"></div>
-                <div class="hero">        
-                  <hgroup>
-                      <!-- <h1>Client-centric product portfolio</h1>         -->
-                      <!-- <h3>Get start your next awesome project</h3> -->
-                  </hgroup>
-                  <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
-                </div>
-              </div>
-            </div> 
-          </div>
         </section>
 
-        <section id="menu2" class=" sliding-portfolio">
+
+        <section style="padding-top: 50px;" id="process" class=" sliding-portfolio">
           <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-              <h2 class="module-title font-alt">Streamlined Processes</h2>
+              <h2 style="padding: 20px 0px;" class="text-center"><strong>Streamlined Processes</strong></h2>
             </div>
           </div>
           <div class="container-fluid">
@@ -527,22 +486,22 @@
                         </div></a></div>
                   </div>
                 </div> -->
-                <div class="owl-item">
+                <!-- <div class="owl-item">
                   <div class="col-sm-12">
                     <div class="work-item">
                         <div class="work-image"><img src="assets/images/timber-log1.jpg" alt="sundaravelgroups"/></div>
                         <h3>Log cutting</h3>
                         <div class="work-caption font-alt">
                           <h3 class="work-title">Timbers are cut to size with band saw</h3>
-                          <!-- <div class="work-descr">Illustration</div> -->
+                          <div class="work-descr">Illustration</div>
                         </div></a></div>
                   </div>
-                </div>
+                </div> -->
                 <div class="owl-item">
                   <div class="col-sm-12">
                     <div class="work-item">
-                        <div class="work-image"><img src="assets/images/timber-banner3.jpg" alt="sundaravelgroups"/></div>
-                        <h3 class="">Debarking</h3>
+                        <div class="work-image"><img src="assets/images/timber-debar.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Debarking</strong></h3>
                         <div class="work-caption font-alt">
                           <h3 class="work-title">Barks of the timber are removed using an advanced debarking machine</h3>
                           <!-- <div class="work-descr">Marketing</div> -->
@@ -552,8 +511,8 @@
                 <div class="owl-item">
                   <div class="col-sm-12">
                     <div class="work-item">
-                        <div class="work-image"><img src="assets/images/timber-car.jpeg" alt="sundaravelgroups"/></div>
-                        <h3 class="">Peeling</h3>
+                        <div class="work-image"><img src="assets/images/timber-peeling.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Peeling</strong></h3>
                         <div class="work-caption font-alt">
                           <h3 class="work-title">Timbers are peeled to form ply</h3>
                           <!-- <div class="work-descr">Illustration</div> -->
@@ -563,8 +522,8 @@
                 <div class="owl-item">
                   <div class="col-sm-12">
                     <div class="work-item">
-                        <div class="work-image"><img src="assets/images/timber-pac.jpeg" alt="sundaravelgroups"/></div>
-                        <h3 class="">Chopping</h3>
+                        <div class="work-image"><img src="assets/images/timber-chop.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Chopping</strong></h3>
                         <div class="work-caption font-alt">
                           <h3 class="work-title">ply is finely chopped into splints and cleaned thoroughly</h3>
                           <!-- <div class="work-descr">Illustration</div> -->
@@ -575,8 +534,8 @@
                 <div class="owl-item">
                   <div class="col-sm-12">
                     <div class="work-item">
-                        <div class="work-image"><img src="assets/images/timber-car.jpeg" alt="sundaravelgroups"/></div>
-                        <h3 class="">Drying</h3>
+                        <div class="work-image"><img src="assets/images/timber-dry.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Drying</strong></h3>
                         <div class="work-caption font-alt">
                           <h3 class="work-title">Splints are dried in the dryer to remove moisture content</h3>
                           <!-- <div class="work-descr">Illustration</div> -->
@@ -587,8 +546,8 @@
                 <div class="owl-item">
                   <div class="col-sm-12">
                     <div class="work-item">
-                        <div class="work-image"><img src="assets/images/timber-car.jpeg" alt="sundaravelgroups"/></div>
-                        <h3 class="">Polishing</h3>
+                        <div class="work-image"><img src="assets/images/timber-polishing.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Polishing</strong></h3>
                         <div class="work-caption font-alt">
                           <h3 class="work-title">Splints are polished by removing extra fiber</h3>
                           <!-- <div class="work-descr">Illustration</div> -->
@@ -596,17 +555,17 @@
                   </div>
                 </div>
 
-                <div class="owl-item">
+                <!-- <div class="owl-item">
                   <div class="col-sm-12">
                     <div class="work-item">
                         <div class="work-image"><img src="assets/images/timber-car.jpeg" alt="sundaravelgroups"/></div>
                         <h3 class="">Leveling and selecting</h3>
                         <div class="work-caption font-alt">
                           <h3 class="work-title">short splints and dust particles are removed</h3>
-                          <!-- <div class="work-descr">Illustration</div> -->
+                          <div class="work-descr">Illustration</div>
                         </div></a></div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -665,9 +624,9 @@
           </div>
         </section> -->
 
-        <section  id="menu5" style="padding: 20px">
+        <section  id="infrastructure" style="padding: 20px;padding-top: 50px;">
           <div class="container">
-            <h2 class="module-title">World-class Infrastructure</h2>
+            <h2 style="padding: 20px 0px;" class="text-center"><strong>World-class Infrastructure</strong></h2>
             <div class="row">
               <div class="col-md-6 text-center">
                 <img src="assets/images/custom/Timber-infra5.jpg" width="100%" alt="sundaravelgroup">
@@ -854,14 +813,14 @@
           }
         </style>
 
-    <section class="contact pt-100 pb-100" id="contact">
+    <section  style="padding-top: 70px;" class="contact pt-100 pb-100" id="contact">
          <div class="container">
             <div class="row">
                <div class="col-xl-6 mx-auto text-center">
                   <div class="section-title mb-100">
                      
                      <h4>Contact Us</h4>
-                     <p>Just submit your details</p>
+                     <p>We look forward to hearing from you</p>
                   </div>
                </div>
             </div>
@@ -888,6 +847,7 @@
                             <option value="Printing">Printing</option>
                             <option value="Timber">Timber</option>
                             <option value="chemicals">chemicals</option>
+                            <option value="Fireworks">Fireworks</option>
                             <option value="other_business">other business</option>
                           </select>
                            <div class="col-xl-12">
