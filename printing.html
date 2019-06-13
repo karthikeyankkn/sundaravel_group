@@ -46,6 +46,16 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Tangerine&display=swap" rel="stylesheet">
   </head>
 <style type="text/css">
+  .pro-pic img{
+    box-shadow: 5px 5px 2px #0000004d;
+  }
+  
+  .work-image {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 2px #0000004d;
+}
+
   .navbar-custom {
     background: linear-gradient(to left, #6bacdb, #0070c0);}
     .sundaravel-contct-us {
@@ -76,6 +86,7 @@
     background-color: #0070c0 !important;
     border-color: #0070c0 !important;
     opacity: .7;
+}
 }
 </style>
 <style type="text/css">
@@ -206,38 +217,8 @@
               transition: .5s cubic-bezier(.3, 0, 0, 1.3)
             }
         </style>
-        <style type="text/css">
-                      /*
-            Fade content bs-carousel with hero headers
-            Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-            Image credits: unsplash.com
-            */
-
-            /********************************/
-            /*       Fade Bs-carousel       */
-            /********************************/
-            .fade-carousel {
-                position: relative;
-                height: 100vh;
-            }
-            .fade-carousel .carousel-inner .item {
-                height: 100vh;
-            }
-            .fade-carousel .carousel-indicators > li {
-                margin: 0 2px;
-                background-color: #0070c0;
-                border-color: #0070c0;
-                opacity: .7;
-            }
-            .fade-carousel .carousel-indicators > li.active {
-              width: 10px;
-              height: 10px;
-              opacity: 1;
-            }
-
-            /********************************/
-            /*          Hero Headers        */
-            /********************************/
+        <!-- <style type="text/css">
+           
             .hero {
                 position: absolute;
                 top: 70%;
@@ -281,21 +262,17 @@
                         transition: 2s all ease-in-out .1s;    
             }
 
-            /********************************/
-            /*            Overlay           */
-            /********************************/
+           
             .overlay {
                 position: absolute;
                 width: 100%;
                 height: 100%;
                 z-index: 2;
-                /*background-color: #080d15b8;*/
+                
                 opacity: .7;
             }
 
-            /********************************/
-            /*          Custom Buttons      */
-            /********************************/
+            
             .btn.btn-lg {padding: 10px 40px;}
             .btn.btn-hero,
             .btn.btn-hero:hover,
@@ -307,9 +284,7 @@
                 margin: 20px auto;
             }
 
-            /********************************/
-            /*       Slides backgrounds     */
-            /********************************/
+           
             .fade-carousel .slides .slide-1, 
             .fade-carousel .slides .slide-2,
             .fade-carousel .slides .slide-3 {
@@ -329,16 +304,14 @@
               background-image: url(assets/images/printing-with-text33.jpg);
             }
 
-            /********************************/
-            /*          Media Queries       */
-            /********************************/
+            
             @media screen and (min-width: 980px){
                 .hero { width: 980px; }    
             }
             @media screen and (max-width: 640px){
                 .hero h1 { font-size: 4em; }    
             }
-        </style>
+        </style> -->
 
         <style type="text/css">
          
@@ -429,59 +402,139 @@
           </div>
         </section> -->
 
-        
-        <section >
-          <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="8000" id="bs-carousel">
-            <!-- Overlay -->
-            <div class="overlay"></div>
+        <style type="text/css">
+          
+        .carousel-control.left
+      {
+        background: none;
+      }
+      .carousel-control.right
+      {
+        background: none;
+      }
 
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#bs-carousel" data-slide-to="1"></li>
-              <li data-target="#bs-carousel" data-slide-to="2"></li>
-            </ol>
-            
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item slides active">
-                <div class="slide-1"></div>
-                <div class="hero">
-                  <hgroup>
-                      <!-- <h1>Printing</h1>         -->
-                      <!-- <h2 style="color: #fff;">German technology offset printing machines ensure precision accuracy of your design on match labels.</h2> -->
-                  </hgroup>
-                  <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
-                </div>
+      .carousel-control
+      {
+        position: absolute;
+        top: 45%;
+        bottom: 0;
+        left: 0;
+        width: 15%;
+        font-size: auto;
+        color: #fff;
+        text-align: center;
+        opacity: 1;
+        text-shadow: none;
+      }
+      .carousel-control:hover
+      {
+        color: #000;
+      }
+      .carousel-indicators
+      {
+        bottom: -50px;
+      }
+      .carousel-indicators li
+      {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #000\9;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid #2182c8;
+        border-radius: 50%;
+      }
+      .carousel-indicators .active
+      {
+        width: 12px;
+        height: 12px;
+        margin: 0;
+        background-color: #2182c8;
+      }
+      .carousel-caption
+      {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: left;
+        
+        background: rgba(0,0,0,0.4);
+      }
+      .carousel-caption h2 {
+      margin-left: 10%;
+      font-size: 50px;
+      }
+      .carousel-caption p {
+      margin-left: 10%;
+      }
+      .carousel-inner>.item>img {
+          line-height: 1;
+          height: 600px;
+          width: 100%;
+      }
+        </style>
+        <section>
+
+              <div class="container-fluid">
+                  <!-- Indicators -->
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                              <img src="assets/images/printing-new-logo1.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2><strong>German Technology</strong></h2>
+                                  <p><strong>Offset printing machines ensure <br> accuracy of design on match labels </strong></p>
+                                 
+                              </div>
+                          </div>
+                          <div class="item">
+                              <img src="assets/images/printing-new-logo2.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2><strong>Entire value chain</strong></h2>
+                                  <p><strong>Extensive in-house vertical integration enable us <br> to deliver wide array of products</strong></p>
+                                 
+                              </div>
+                          </div>
+                          <div class="item">
+                              <img src="assets/images/printing-new-logo3.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2><strong>Expertise</strong></h2>
+                                  <p><strong>Our skilled workforce is capable of delivering <br> top results for the most intricate jobs</strong></p>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                          <span class="fa fa-angle-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                          <span class="fa fa-angle-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                      <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                  </div>
               </div>
-              <div class="item slides">
-                <div class="slide-2"></div>
-                <div class="hero">        
-                  <hgroup>
-                      <!-- <h1>Employee Friendly Environment</h1>         -->
-                      <!-- <h2 style="color: #fff;">Fully automatic production technology ensures top quality and consistency.</h2> -->
-                  </hgroup>       
-                  <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
-                </div>
-              </div>
-              <div class="item slides">
-                <div class="slide-3"></div>
-                <div class="hero">        
-                  <hgroup>
-                      <!-- <h1>Client-centric product portfolio</h1>         -->
-                      <!-- <h3>Get start your next awesome project</h3> -->
-                  </hgroup>
-                  <!-- <button class="btn btn-hero btn-lg" role="button">See all features</button> -->
-                </div>
-              </div>
-            </div> 
-          </div>
         </section>
 
-        <section id="menu2" class=" sliding-portfolio">
+        <section style="padding-top: 50px;" id="process" class=" sliding-portfolio">
           <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-              <h2 class="module-title font-alt">Streamlined Processes</h2>
+              <h2 style="padding: 25px 0px;" class="text-center"><strong>Streamlined Processes</strong></h2>
             </div>
           </div>
           <div class="container-fluid">
@@ -491,7 +544,7 @@
                   <div class="col-sm-12">
                     <div class="work-item">
                         <div class="work-image"><img src="assets/images/pre-press.jpg" alt="sundaravelgroups"/></div>
-                        <h3>Pre Press</h3>
+                        <h3><strong>Pre Press</strong></h3>
                         <div class="work-caption font-alt">
                           <h3 class="work-title">Standardised digital workflow for error free pre-press</h3>
                           <!-- <div class="work-descr">Illustration</div> -->
@@ -502,7 +555,7 @@
                   <div class="col-sm-12">
                     <div class="work-item">
                         <div class="work-image"><img src="assets/images/offset-printing.jpg" alt="sundaravelgroups"/></div>
-                        <h3 class="">Offset Printing</h3>
+                        <h3 class=""><strong>Offset Printing</strong></h3>
                         <div class="work-caption font-alt">
                           <h3 class="work-title">Sheet-fed German technology offset for high quality printing</h3>
                           <!-- <div class="work-descr">Marketing</div> -->
@@ -513,9 +566,9 @@
                   <div class="col-sm-12">
                     <div class="work-item">
                         <div class="work-image"><img src="assets/images/post-press.jpg" alt="sundaravelgroups"/></div>
-                        <h3 class="">Post Press</h3>
+                        <h3 class=""><strong>Post Press</strong></h3>
                         <div class="work-caption font-alt">
-                          <h3 class="work-title">Post Press</h3>
+                          <h3 class="work-title">We rely of german technology for precise scoring and die-cutting</h3>
                           
                         </div></a></div>
                   </div>
@@ -523,8 +576,8 @@
                 <div class="owl-item">
                   <div class="col-sm-12">
                     <div class="work-item">
-                        <div class="work-image"><img src="assets/images/screen-printing1.jpg" alt="sundaravelgroups"/></div>
-                        <h3 class="">Screen Printing</h3>
+                        <div class="work-image"><img src="assets/images/print-sp-new.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Screen Printing</strong></h3>
                         <div class="work-caption font-alt">
                           <h3 class="work-title">Proprietary side-friction printing process</h3>
                           <!-- <div class="work-descr">Illustration</div> -->
@@ -541,32 +594,32 @@
         </section>
 
 
-        <section id="menu3">
+        <section style="padding-top: 50px;" id="products">
           <div class="container">
-            <h2 class=" text-center module-title font-alt" style="text-align: center;padding: 30px;">Products Across Multiple Segments</h2>
+            <h2 class=" text-center" style="text-align: center;padding: 25px 0px;"><strong>Products Across Multiple Segments</strong></h2>
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 ">
                 <img src="assets/images/pamplates-new.jpg" width="100%" alt="sundaravelgroup"> 
-                  <h4 class="text-center">Pamphlets</h4>
+                  <h4 class="text-center"><strong>Pamphlets</strong></h4>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 ">
                 <img src="assets/images/cn-box-new.jpg" width="100%" alt="sundaravelgroup">
-                    <h4 class="text-center">Mono Carton Boxes</h4>
+                    <h4 class="text-center"><strong>Mono Carton Boxes</strong></h4>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 ">
                 <img src="assets/images/corr-boxes-new.jpg" width="100%" alt="sundaravelgroup">
-                    <h4 class="text-center">corrugated boxes</h4>
+                    <h4 class="text-center"><strong>corrugated boxes</strong></h4>
               </div>
               
             </div>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 ">
                 <img src="assets/images/calender2.jpg" width="100%" alt="sundaravelgroup">
-                    <h4 class="text-center">Calendars</h4>
+                    <h4 class="text-center"><strong>Calendars</strong></h4>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 ">
                 <img src="assets/images/leaflets1.jpg" width="100%" alt="sundaravelgroup">
-                    <h4 class="text-center">Leaflets</h4>
+                    <h4 class="text-center"><strong>Leaflets</strong></h4>
               </div>
             </div>
           </div>
@@ -622,16 +675,17 @@
           </div>
         </section> -->
 
-        <section  id="menu5" style="padding: 20px">
+        <section  id="infrastructure" style="padding: 50px">
           <div class="container">
-            <h2 class="module-title">World-class Infrastructure</h2>
+            <h2 class="text-center" style="padding: 25px 0px;"><strong>World-class Infrastructure</strong></h2>
             <div class="row">
-              <div class="col-md-6 text-center">
+              <div class="col-md-5 text-center pro-pic">
                 <img src="assets/images/printing-infra2.jpg" width="100%" alt="sundaravelgroup">
                 <h3><strong>Cutting edge technology</strong></h3>
                 <p>German technology offset printing machines ensure precision printing of your design on match labels.</p>
               </div> 
-              <div class="col-md-6 text-center">
+              <div class="col-sm-2"></div>
+              <div class="col-md-5 text-center pro-pic">
                 <img src="assets/images/printing-infra1.jpg" width="100%" alt="sundaravelgroup">
                 <h3><strong>Highly skilled team</strong></h3>
                 <p>Our expert team delivers high quality results for the most intricate jobs. Our clients enjoy absolute peace of mind in terms of quality</p>
@@ -745,6 +799,7 @@
               position: relative;
               z-index: 2;
               color: #fff;
+              box-shadow: 5px 5px 2px #0000004d;
             }
             .contact-form input,
             textarea {
@@ -821,14 +876,14 @@
           }
         </style>
 
-    <section class="contact pt-100 pb-100" id="contact">
+    <section style="padding-top: 70px;" class="contact pt-100 pb-100" id="contact">
          <div class="container">
-            <div class="row">
+            <div class="row text-center">
                <div class="col-xl-6 mx-auto text-center">
-                  <div class="section-title mb-100">
+                  <div class="section-title mb-100 ">
                      
                      <h4>Contact Us</h4>
-                     <p>Just submit your details</p>
+                     <p>We look forward to hearing from you</p>
                   </div>
                </div>
             </div>
@@ -855,6 +910,7 @@
                             <option value="Printing">Printing</option>
                             <option value="Timber">Timber</option>
                             <option value="chemicals">chemicals</option>
+                            <option value="Fireworks">Fireworks</option>
                             <option value="other_business">other business</option>
                           </select>
                            <div class="col-xl-12">
