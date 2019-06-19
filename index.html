@@ -61,6 +61,9 @@
     <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet">
   </head>
 <style>
+  .navbar-brand {
+    padding: 0px 0px;
+  }
   .bg-dark {
     /* background: #ee1c25; */
     background: linear-gradient(to left, #ee1c25,#8b0100 );
@@ -104,8 +107,7 @@
   opacity: 1;
   right: 0;
 }
-</style>
-<style type="text/css">
+
   .sundaravel-contct-us {
     background: linear-gradient(to left, #ee1c25,#8b0100 );
     color: #fff;
@@ -125,12 +127,12 @@
 }
 .a-logo1  {
     position: absolute;
-    top: -5% !important;
-    left: 20% !important;
+    top: 11% !important;
+    left: 42% !important;
     z-index: 1;  
 }
 .a-logo1 img {
-    height: 500px;
+    height: 200px;
    
 }
 .navbar-custom {
@@ -155,6 +157,70 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
+
+
+
+
+@media only screen and (min-width:1440px) {
+  .a-logo1 {
+    position: absolute;
+    top: 9% !important;
+    left: 43% !important;
+    z-index: 1;
+}
+}
+
+@media only screen and (max-width:1024px) {
+  .a-logo1 {
+    position: absolute;
+    top: 6% !important;
+    left: 42% !important;
+    z-index: 1;
+}
+}
+
+@media only screen and (max-width:768px) {
+  .navbar-custom .nav li > a {
+    position: relative;
+    color: #fff;
+    font-size: 10px;
+    text-transform: initial;
+    font-weight: bold;
+}
+.a-logo1 {
+    position: absolute;
+    top: 7% !important;
+    left: 40% !important;
+    z-index: 1;
+}
+}
+
+@media only screen and (max-width:480px) {
+  .a-logo1  {
+    position: absolute;
+    top: 13% !important;
+    left: 23% !important;
+    z-index: 1;  
+}
+.sundaravel-contct-us{
+  font-size:10px;
+}
+.mob{
+  padding-top: 20px;
+}
+.matches-container-row2{
+  display: block !important;
+}
+
+.matches-container-row4{
+  display: block !important;
+}
+
+.matches-container-row5{
+  display: block !important;
+}
+
+}
 </style>
 <a class="sundaravel-contct-us  button" href="#contact" >  Contact Us</a>
 
@@ -166,7 +232,7 @@
       <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation" id="header">
         
       </nav>
-      <a class="a-logo1" href=""><img src="assets/images/50-anni-logo-new.png" alt="sundaravelgroup" ></a>
+      <a class="a-logo1" ><img src="assets/images/50-anni-logo-new.png" alt="sundaravelgroup" ></a>
       <section id="home" style="background-image: url(assets/images/cracker-new-logo.jpg);height: 450px;"> 
         <div class="titan-caption" style="background-color: ; padding-top: 250px;">
           <div class="caption-content">
@@ -174,8 +240,8 @@
               <!-- <img src="assets/images/custom/50th Logo.png" alt="50th-aniversary-Logo" width="325"> -->
               <!-- <strong style="font-size: 24px; background: #2c3250; padding: 5px 10px; font-family: fantasy; border-radius: 30px; margin-top: 20px; font-weight: bold;">Celebrating 50th Anniversary</strong> -->
             </div>
-            <div style="color: #fff;"  class="font-alt mb-40 titan-title-size-4">Lighting Dreams</div>
-            <h2 style="color: #fff;">Since 1969</h2>
+            <div style="color: #fff;text-shadow: 3px 3px #FF0000;"  class="font-alt mb-40 titan-title-size-4">Lighting Dreams</div>
+            <h2 style="color: #fff;text-shadow: 2px 2px #FF0000;">Since 1969</h2>
             <br>
             <!-- <a class="section-scroll btn btn-border-w btn-round" href="#menu2">Learn More</a> -->
           </div>
@@ -243,8 +309,8 @@
 
         <section class="module bg-dark-60 text-center" data-background="assets/images/match-parallex-new-banner.jpg" style="background-position: 50% 15%; border-top: 10px solid #fff;padding: 20px 0px !important;" >
           <div class="container">
-            <div class="row multi-columns-row" style="margin-left: 100px;margin-right: 100px;">
-              <div class="col-sm-4 col-md-4 col-lg-4">
+            <div class="row " >
+              <div class="col-sm-4 col-md-4 col-lg-4  mob">
                 <!-- <div class="count-item mb-sm-40"> -->
                   <!-- <div class="count-icon"><span class="icon-target"></span></div> -->
                   <!-- <h3 class="count-to font-alt" data-countto="50"></h3> -->
@@ -254,7 +320,7 @@
                 <!-- </div> -->
               </div>
               
-              <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="col-sm-4 col-md-4 col-lg-4 mob">
                 <!-- <div class="count-item mb-sm-40"> -->
                   <!-- <div class="count-icon"><span class="icon-trophy"></span></div> -->
                   <!-- <h3 class="count-to font-alt" data-countto="1000000000"></h3> -->
@@ -264,7 +330,7 @@
                   <h5 class=""style="font-family: avenir">  We manufacture more than 1 billion match boxes in a year</h5>
                 <!-- </div> -->
               </div>
-              <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="col-sm-4 col-md-4 col-lg-4 mob">
                 <!-- <div class="count-item mb-sm-40"> -->
                   <!-- <div class="count-icon"><span class="icon-bargraph"></span></div> -->
                   <!-- <h3 class="count-to font-alt" data-countto="50000 "></h3> -->
@@ -1851,9 +1917,9 @@
         <section style="padding-top: 70px;" id="excellence">
           <div class="container text-center">
             <h2 style="color: #6d6a6a;padding: 25px 0px;" class=""><strong>Excellence in Match Making</strong></h2>
-            <p>Complete value chain of match making is managed
+            <h4>Complete value chain of match making is managed
             in-house with extensive vertical integration from
-            procurement of raw materials to delivery at</p><br>
+            procurement of raw materials to delivery at your door step</h4><br>
             <div class="row">
               <div class="col-md-3">
                 <img src="assets/images/ex-icons8-water-50.png" alt="sundaravelgroup">
@@ -1920,7 +1986,7 @@
                 <br><br>
                 <h3><strong>Online quality monitoring</strong></h3>
                 <p>Quality checking devices in our production line
-                assures only top quality product for our customers</p>
+                assures  top quality product for our customers</p>
               </div> 
 
             </div>
@@ -2093,7 +2159,9 @@
             <div class="row">
               <div class="col-md-6 text-center">
                 <h2 style="color: #6d6a6a" class="module-title"><strong>Uncompromised Quality</strong></h2>
-                  <p style="font-size: 17px;">We have a state-of-the-art in-house lab to test the quality of raw materials before they are pushed for production. Our highly trained quality assurance personnel are available 24*7 at the production site to ensure quality and safety parameters. We employ State-of-the-art box filling technology to maintain accuracy in stick count. </p>
+                  <!-- <p style="font-size: 17px;">We have a state-of-the-art in-house lab to test the quality of raw materials before they are pushed for production. Our highly trained quality assurance personnel are available 24*7 at the production site to ensure quality and safety parameters. We employ State-of-the-art box filling technology to maintain accuracy in stick count. </p>
+ -->
+                  <p style="font-size: 17px;">We have state-of-the-art lab to test the quality of raw materials before they enter the production site. Our highly trained quality assurance personals are available round the clock to ensure quality and safety parameters. We employ the latest box filling technology to maintain accuracte stick count in each match box.</p>
               </div> 
               <div class="col-md-6">
                 <img class="polaroid" src="assets/images/custom/biology-doctor-health-4154.jpg" alt="sundaravelgroup-quality-assurence">
@@ -2381,7 +2449,7 @@
                   <div class="section-title mb-100">
                      
                      <h4>Contact Us</h4>
-                     <h5>We look forward to hearing from you</h5>
+                     <h3>We look forward to hearing from you</h3>
                   </div>
                </div>
             </div>

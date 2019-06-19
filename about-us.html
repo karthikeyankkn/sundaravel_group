@@ -50,6 +50,9 @@
 
   </head>
 <style type="text/css">
+  .navbar-brand {
+    padding: 0px 0px;
+  }
   .icons img{
     height: 60px;
   }
@@ -113,7 +116,7 @@
 }
 </style>
 
-      
+    
        
 <a class="sundaravel-contct-us  button" href="#contact" >  Contact Us </a>
 
@@ -125,8 +128,8 @@
       <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation" id="header">
         
       </nav>
-      <br><br><br><br><br>
-      <section  class="home-section bg-dark-30" id="home" data-background="assets/images/179123.jpg">
+      <br><br>
+      <section style="display: none;"  class="home-section bg-dark-30" id="home" data-background="assets/images/179123.jpg">
         <!-- <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=oV6UFGWwifE', containment:'.home-section', startAt:1, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
         <div class="video-controls-box">
           <div class="container">
@@ -284,6 +287,124 @@
           }
         </style>
 
+         <style type="text/css">
+          
+        .carousel-control.left
+      {
+        background: none;
+      }
+      .carousel-control.right
+      {
+        background: none;
+      }
+
+      .carousel-control
+      {
+        position: absolute;
+        top: 45%;
+        bottom: 0;
+        left: 0;
+        width: 15%;
+        font-size: auto;
+        color: #fff;
+        text-align: center;
+        opacity: 1;
+        text-shadow: none;
+      }
+      .carousel-control:hover
+      {
+        color: #000;
+      }
+      .carousel-indicators
+      {
+        bottom: -50px;
+      }
+      .carousel-indicators li
+      {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #000\9;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid #05b847;
+        border-radius: 50%;
+      }
+      .carousel-indicators .active
+      {
+        width: 12px;
+        height: 12px;
+        margin: 0;
+        background-color: #05b847;
+      }
+      .carousel-caption
+      {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: left;
+        
+        background: rgba(0,0,0,0.4);
+      }
+      .carousel-caption h2 {
+      margin-left: 10%;
+      font-size: 50px;
+      }
+      .carousel-caption h3 {
+      margin-left: 10%;
+      }
+      .carousel-caption p {
+      margin-left: 10%;
+      }
+      .carousel-inner>.item>img {
+          line-height: 1;
+          height: 600px;
+          width: 100%;
+      }
+        </style>
+        <section>
+
+              <div class="container-fluid">
+                  <!-- Indicators -->
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                              <img src="assets/images/179123.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2 style="text-shadow: 3px 3px #635353;"><strong>Sundaravel Group</strong></h2>
+                                  <h3 style="text-shadow: 3px 3px #635353;"><strong>Lightening up billions of homes</strong></h3>
+                                  <p style="text-shadow: 3px 3px #635353;"><strong>Delivering high-quality Matchboxes For Over Fifty Years.</strong></p>
+                                 
+                              </div>
+                          </div>
+                          
+                      </div>
+                      <!-- Left and right controls -->
+                      <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                          <span class="fa fa-angle-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                          <span class="fa fa-angle-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a> -->
+                      <!-- <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol> -->
+                  </div>
+              </div>
+        </section>
+
       <section style="padding-top: 70px;"  id="vision" >
           <div class="container">
             <div class="row">
@@ -294,17 +415,20 @@
               </div> 
 
               <div class="col-md-6 text-center" style="padding-top: 50px;">
-                <img class="polaroid" src="assets/images/vision.jpg" alt="sundaravelgroup" width="100%">
+                <img style="box-shadow: 5px 5px 2px #0000004d;" class="polaroid" src="assets/images/vision.jpg" alt="sundaravelgroup" width="100%">
                 <br><br>
                 
-                <p>To delight our Customers, stakeholders & employees by manufacturing high-quality matches at competitive prices and provide value for money experience at every touch point. We attain this by adhering to industry best practices in quality and safety standards.</p>
+                
               </div> 
 
-              <div class="col-md-6 text-center" style="padding-top: 50px;">
-                <img class="polaroid" src="assets/images/mission.jpg" alt="sundaravelgroup" width="100%">
-                <br><br>
-                
+              <div class="col-md-6 " style="padding-top: 50px;">
+                <!-- <img class="polaroid" src="assets/images/mission.jpg" alt="sundaravelgroup" width="100%">
+                <br><br> -->
+                <h3><strong>Vision</strong></h3>
                 <p>The vision of Sundaravel Group is to be a premier manufacturer of quality matches that continue to enlighten billions of homes and lives across the globe.</p>
+                <br>
+                <h3><strong>Mission</strong></h3>
+                <p>To delight our Customers, stakeholders & employees by manufacturing high-quality matches at competitive prices and provide value for money experience at every touch point. We attain this by adhering to industry best practices in quality and safety standards.</p>
               </div> 
 
              
@@ -433,7 +557,7 @@
                   <li class="transition">
                     <div class="wrapper"> <img class="transition" src="assets/images/custom/04-Sundaravel.jpg">
                       <ul class="social">
-                       <li style="color: #000;font-size: 12px;">"We envision 27 matches to be the top selling safety matches in India.In order to achieve this vision, we ensure that our employees are strongly aligned with our company’s values and mission.”</li>
+                       <li style="color: #000;font-size: 15px;">"We envision 27 matches to be the top selling safety matches in India.In order to achieve this vision, we ensure that our employees are strongly aligned with our company’s values and mission.”</li>
                         
                       </ul>
                       <span class="transition">
@@ -444,7 +568,7 @@
                   <li class="transition">
                     <div class="wrapper"> <img class="transition" src="assets/images/chairman.jpg">
                       <ul class="social">
-                        <li style="color: #000;font-size: 12px;">“We commit to every person, entity or organisation, associated with us to honour our deliverables
+                        <li style="color: #000;font-size: 15px;">“We commit to every person, entity or organisation, associated with us to honour our deliverables
                         by adhering to industry benchmarked practices. We ensure fair benefit to every stakeholder
                         working with us, irrespective of the market conditions to maintain stable business conditions.”</li>
                         
@@ -457,7 +581,7 @@
                   <li class="transition">
                     <div class="wrapper"> <img class="transition" src="assets/images/managing-director-new.jpg" >
                       <ul class="social">
-                        <li style="color: #000;">We are committed in working towards improving the quality of living of all our employees. We
+                        <li style="color: #000;font-size: 15px;">We are committed in working towards improving the quality of living of all our employees. We
                         believe that the real growth of the company depends on the growth of its employees and the
                         society in which it operates.”</li>
                         
@@ -755,7 +879,7 @@
               
               <div class="col-md-12 text-center">
                 <h2 style="color: #6d6a6a" class="text-center"><strong>Values and Culture</strong></h2>
-                  <p>Sundaravel group believes in giving back to the society that has helped in the growth of the business group.</p>
+                  <h4>Sundaravel group believes in giving back to the society which aids its sustainable growth over the past 50 years and also the years to come.</h>
               </div> 
 
               <div class="col-md-3 text-center icons" style="padding-top: 50px;">
@@ -799,7 +923,7 @@
                   <div class="section-title mb-100">
                      
                      <h4>Contact Us</h4>
-                     <p>We look forward to hearing from you</p>
+                     <h3>We look forward to hearing from you</h3>
                   </div>
                </div>
             </div>
