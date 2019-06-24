@@ -1066,7 +1066,7 @@
                 margin-top: 10px;
               }
         </style>
-        <section style="padding-top: 50px;" id="products" >
+        <section style="padding-top: 50px;" id="products" class="hidden-xs hidden-sm">
           <div class="container">
             <br>
             <h2 style="font-size: 32px" class="text-center"><strong>Domestic Matches</strong></h2>
@@ -1389,7 +1389,7 @@
             </div>
         </section>
 
-        <section   id="export">
+        <section   id="export" class="hidden-xs hidden-sm">
           <div class="container">
             <!-- product 5 -->
             <h2 style="font-size: 32px" class="text-center"><strong>Export Matches</strong></h2>
@@ -1558,6 +1558,343 @@
             border-color: #ee1b25;
         }
         </style>
+
+
+<!-- <====== products for mobile start=====> -->
+      <style type="text/css">
+    /*.carousel-control {
+    width: 0% !important;
+    color: black !important;
+    }*/
+    .view {
+    font-weight: 800;
+    font-size: 15px;
+    color: #fff;
+    background-color: #cd0000;
+    border:none;
+    margin-bottom: 10px;
+    }
+    .view a{
+        color: #fff; 
+       padding: 10px 10px;
+    display: block;
+    }
+    .view a:hover{
+        color: #fff;
+    }
+    .Spini-Projects{
+        text-align: center;
+    }
+
+</style>
+
+<style>
+    .slider-container1, .slider-container2, .slider-container3{
+      position: relative;
+    }
+    .slider-container3{
+      padding-bottom: 30px;
+    }
+    .slider-parent{
+      list-style: none;
+      overflow-x: scroll;
+      display: flex;
+      padding: 0;
+      transition: 1s ease;
+    }
+    .slider-parent li{
+      list-style: none;
+      max-width: 225px;
+      display: -webkit-inline-box;
+      margin:0 15px 0 0;
+      position: relative;
+      transition: 1s ease;
+    }
+    .list-card{
+      border: 1px solid #888;
+      height: unset;
+      cursor: pointer;
+    transition: .3s ease-in-out;
+    box-shadow: 5px 5px 2px #0000004d;
+    background-color: #fff;
+    background: linear-gradient(to bottom left, #DEDEDE, #747474);
+    }
+    .list-card img{
+      width: 100%;
+    }
+    .list-card article{
+      padding: 10px;
+    }
+    .list-cart article span{
+      padding: 5px 10px;
+      display: block;
+    }
+    .list-card article a{
+      text-align: center;
+      display: block;
+      width: 100px;
+      margin:10px auto;
+    }
+    ::-webkit-scrollbar { 
+    display: none; 
+    }
+    .left_go1, .left_go2,.left_go3{
+      /*position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0px;*/
+      padding: 5px;
+      position: absolute;
+      display: none;
+      top: 60%;
+      left: -2%;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+    }
+    .right_go1, .right_go2,.right_go3{
+      /*position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0px;*/
+      padding: 5px;
+      position: absolute;
+      top: 60%;
+      display: none;
+      right: -2%;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+    }
+    article h3{
+      color: #fff;
+
+    }
+    article p{
+      color: #fff;
+      
+    }
+
+    @media only screen and (max-width: 768px) {
+      .slider-parent li{
+      list-style: none;
+      min-width: 250px;
+      display: -webkit-inline-box;
+      margin:0 15px 0 0;
+      position: relative;
+      transition: 1s ease;
+    }
+    }
+
+    @media only screen and (max-width: 500px) {
+         .slider-parent li {
+            min-width: 200px;
+        }
+        .card-title{
+            font-size: 11px;
+            font-weight: 800;
+            line-height: 20px;
+        }
+        .card-text{
+           font-size: 11px;
+            font-weight: 800; 
+        }
+        .view a{
+            padding: 10px 10px;
+        }
+        .list-card article{
+            padding:0px !important;
+        }
+    }
+    .Spini-Projects,.spini-provides {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    }
+  </style>
+
+ <section class="hidden-md hidden-lg">
+    <div class="container slider-container1" style="margin-top: 50px;">
+     <h2 style="font-size: 32px" class="text-center"><strong>Domestic Matches</strong></h2>
+  
+    
+      <ul class="slider-parent" id="slider1">
+        <li>
+          <div class="list-card">
+          <img src="assets/images/cb-deluxe.png" alt="sundaravelgroup">
+          <article>
+            <h3 class="text-center">Deluxe</h3>
+            <!-- <p>Size in mm: (46 x 35 x 13)</p>
+            <p>No. of sticks: 40’S</p>
+            <p>Splint size: 40 mm</p>
+            <p>packaging: 600 boxes/bundle</p> -->
+          </article>
+        </div>
+        </li>
+        <li>
+          <div class="list-card">
+          <img src="assets/images/cb-hurricane.png" alt="sundaravelgroup">
+          <article>
+            <h3 class="text-center">Hurricane</h3>
+          </article>
+        </div>
+        </li>
+        <li>
+          <div class="list-card">
+          <img src="assets/images/cb-green-matches.png" alt="sundaravelgroup" />
+          <article>
+            <h3 class="text-center">Green Matches</h3>
+          </article>
+        </div>
+        </li>
+        <li>
+          <div class="list-card">
+          <img src="assets/images/cb-trump-new.png" alt="sundaravelgroup">
+          <article>
+            <h3 class="text-center">Trump</h3>
+           
+          </article>
+        </div>
+        </li>
+
+        <li>
+          <div class="list-card">
+          <img src="assets/images/rr-new.png" alt="sundaravelgroup">
+          <article>
+            <h3 class="text-center">Raja Rani</h3>
+           
+          </article>
+        </div>
+        </li>
+        
+      </ul>
+
+      <button class="left_go1 hidden-xs glyphicon glyphicon-menu-left" id="left_go"></button>
+      <button class="right_go1 hidden-xs glyphicon glyphicon-menu-right" id="right_go"></button>
+    </div>
+    
+  </section>
+
+<section class="hidden-md hidden-lg">
+    <div class="container slider-container1" style="margin-top: 30px;">
+      <h2 style="font-size: 32px" class="text-center"><strong>Special Matches</strong></h2>
+      <ul class="slider-parent" id="slider1" >
+        <li style="max-width: 271px;">
+          <div class="list-card">
+          <img src="assets/images/veener.png" alt="sundaravelgroup">
+          <article>
+            <h3 class="text-center">Veneers</h3>
+            
+          </article>
+          </div>
+        </li>
+
+        <li style="max-width: 271px;">
+          <div class="list-card">
+          <img src="assets/images/wax-spectrum.png" alt="sundaravelgroup">
+          <article>
+            <h3 class="text-center">Wax</h3>
+            
+          </article>
+          </div>
+        </li>
+        <li style="max-width: 271px;">
+          <div class="list-card">
+          <img src="assets/images/sm-27.png" alt="sundaravelgroup"></a>
+          <article>
+            <h3 class="text-center">Mini 80’S</h3>
+            
+          </article>
+          </div>
+        </li>
+
+        <li style="max-width: 271px;">
+          <div class="list-card">
+          <img src="assets/images/sm-27-300s.png" alt="sundaravelgroup">
+          <article>
+            <h3 class="text-center">Match 300's</h3>
+            
+          </article>
+          </div>
+        </li>
+        
+        <li style="max-width: 271px;">
+          <div class="list-card">
+          <img src="assets/images/sm-special-80.png" alt="sundaravelgroup">
+          <article>
+            <h3 class="text-center">Special 80's</h3>
+            
+          </article>
+          </div>
+        </li>
+        
+      </ul>
+      <button class="left_go1 hidden-xs glyphicon glyphicon-menu-left" id="left_go"></button>
+      <button class="right_go1 hidden-xs glyphicon glyphicon-menu-right" id="right_go"></button>
+    </div>
+    
+  </section>
+
+<section class="hidden-md hidden-lg">
+    <div class="container slider-container1" style="margin-top: 30px;">
+      <h2 style="font-size: 32px" class="text-center"><strong>Export Matches</strong></h2>
+      <ul class="slider-parent" id="slider1" >
+        <li style="max-width: 271px;">
+          <div class="list-card">
+          <img src="assets/images/elephant-new.png" alt="sundaravelgroup">
+          <article>
+            <h3 class="text-center">Elephant</h3>
+            
+          </article>
+          </div>
+        </li>
+
+        <li style="max-width: 271px;">
+          <div class="list-card">
+          <img src="assets/images/sm-golden-horse.png" alt="sundaravelgroup">
+          <article>
+            <h3 class="text-center">Golden Horse</h3>
+            
+          </article>
+          </div>
+        </li>
+        <li style="max-width: 271px;">
+          <div class="list-card">
+          <img src="assets/images/falcon-new.png" alt="sundaravelgroup"></a>
+          <article>
+            <h3 class="text-center">Falcon</h3>
+            
+          </article>
+          </div>
+        </li>
+
+        <li style="max-width: 271px;">
+          <div class="list-card">
+          <img src="assets/images/flamingo-new5.png" alt="sundaravelgroup">
+          <article>
+            <h3 class="text-center">Flamingo</h3>
+            
+          </article>
+          </div>
+        </li>
+        
+        <li style="max-width: 271px;">
+          <div class="list-card">
+          <img src="assets/images/sm-kiboko.png" alt="sundaravelgroup">
+          <article>
+            <h3 class="text-center">Kiboko</h3>
+            
+          </article>
+          </div>
+        </li>
+        
+      </ul>
+      <button class="left_go1 hidden-xs glyphicon glyphicon-menu-left" id="left_go"></button>
+      <button class="right_go1 hidden-xs glyphicon glyphicon-menu-right" id="right_go"></button>
+    </div>
+    
+  </section>
+<!-- <====== products for mobile end ======> -->
 
         <!-- <section id="menu2">
           <div class="container">
@@ -2725,6 +3062,52 @@
     });
   });
 </script>
+<script> 
+      $(document).ready(function(){
+          $("#left_go").click(function(){
+           // var pos = $('.slider-parent').scrollRight() + 260;
+           //  $('.slider-parent').scrollRight(pos);
+            var pos = $('#slider1').scrollLeft() - 375;
+            $('#slider1').animate({scrollLeft: pos}, 300);
+          });
+          $("#right_go").click(function(){
+            // debugger
+            var pos = $('#slider1').scrollLeft() + 375;
+            $('#slider1').animate({scrollLeft: pos}, 300);
+            
+          });
+      });
+</script> 
+<script> 
+    $(document).ready(function(){
+        $("#left_go2").click(function(){
+         // var pos = $('.slider-parent').scrollRight() + 260;
+         //  $('.slider-parent').scrollRight(pos);
+          var pos = $('#slider2').scrollLeft() - 375;
+          $('#slider2').animate({scrollLeft: pos}, 300);
+        });
+        $("#right_go2").click(function(){
+          // debugger
+          var pos = $('#slider2').scrollLeft() + 375;
+          $('#slider2').animate({scrollLeft: pos}, 300);
+        });
+    });
+</script> 
+<script> 
+    $(document).ready(function(){
+        $("#left_go3").click(function(){
+         // var pos = $('.slider-parent').scrollRight() + 260;
+         //  $('.slider-parent').scrollRight(pos);
+          var pos = $('#slider3').scrollLeft() - 375;
+          $('#slider3').animate({scrollLeft: pos}, 300);
+        });
+        $("#right_go3").click(function(){
+          // debugger
+          var pos = $('#slider3').scrollLeft() + 375;
+          $('#slider3').animate({scrollLeft: pos}, 300);
+        });
+    });
+  </script> 
     <!-- <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
