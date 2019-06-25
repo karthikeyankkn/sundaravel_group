@@ -47,6 +47,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
 <style type="text/css">
+  body,html{max-width:100%;
+    overflow-x:hidden}
   body{
     font-family: 'Montserrat',avenir ,sans-serif !important;
   }
@@ -94,6 +96,9 @@
     background-color: #00b050 !important;
     border-color: #00b050 !important;
     opacity: .7;
+}
+.infra-pad{
+  padding: 50px;
 }
 </style>
 <style type="text/css">
@@ -391,6 +396,15 @@
           height: 600px;
           width: 100%;
       }
+      @media only screen and (max-width:480px) {
+        .carousel-inner>.item>img {
+          line-height: 1;
+          height: 400px;
+          width: 100%;
+      }
+      .infra-pad{
+  padding: 10px;
+}
         </style>
         <section>
 
@@ -778,10 +792,10 @@
             <h2 style="padding: 20px 0px;font-size: 32px;" class="text-center"><strong>World-class Infrastructure</strong></h2>
             <div class="row">
               
-              <div class="col-md-6 text-center" style="padding: 50px">
+              <div class="col-md-6 text-center infra-pad" >
                 <img style="box-shadow: 0px 0px 18px 0px #6755559e;" src="assets/images/timber-infra-ukrine2.jpg" width="100%" alt="sundaravelgroup">
               </div> 
-              <div class="col-md-6 text-center" style="padding: 50px">
+              <div class="col-md-6 text-center infra-pad" >
                 <img style="box-shadow: 0px 0px 18px 0px #6755559e;" src="assets/images/timber-infra-ukrine1.jpg" width="100%" alt="sundaravelgroup">
               </div> 
                         
