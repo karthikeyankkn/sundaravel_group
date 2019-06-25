@@ -51,6 +51,8 @@
 
   </head>
 <style type="text/css">
+  body,html{max-width:100%;
+    overflow-x:hidden}
   body{
      font-family: 'Montserrat',avenir ,sans-serif !important;
   }
@@ -97,6 +99,9 @@
     background-color: #ffa24e !important;
     border-color: #ffa24e !important;
     opacity: .7;
+}
+.infra-pad{
+  padding: 50px;
 }
 </style>
 <style type="text/css">
@@ -406,7 +411,7 @@
       <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation" id="header">
         
       </nav>
-      <br><br><br>
+      <br><br>
       <section style="display: none;" class="home-section bg-dark-30" id="home" data-background="https://lh3.googleusercontent.com/-LuSkDCcvRTM/XOUr0yuUWuI/AAAAAAAAAHM/hcG9Gt46VTkK2Luc4YO2_QJ7PT8Jb3vkQCK8BGAs/s0/2019-05-22.jpg">
         <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=oV6UFGWwifE', containment:'.home-section', startAt:1, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
         <div class="video-controls-box">
@@ -552,6 +557,16 @@
           height: 600px;
           width: 100%;
       }
+      @media only screen and (max-width:480px) {
+        .carousel-inner>.item>img {
+          line-height: 1;
+          height: 350px;
+          width: 100%;
+          }
+        .infra-pad{
+          padding: 10px;
+        }
+        }
         </style>
         <section>
 
@@ -592,12 +607,12 @@
           <div class="container">
             <h2 class=" text-center" style="text-align: center;padding: 30px;font-size: 32px;"><strong>Products Across Multiple Segments</strong></h2>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-6">
                 <img src="assets/images/chemical-product.jpg"> 
                   <h4 class="text-center"><strong>Potassium chlorate salt</strong></h4>
               </div>
               
-              <div class="col-md-6 " style="padding: 20px;color: #ffa14e;margin-top: 50px;">
+              <div class="col-md-6 col-sm-6" style="padding: 20px;color: #ffa14e;margin-top: 50px;">
                 <h3><i class="fas fa-arrow-circle-right" style="color:#ffa14e; "></i> Purity - 99.8%</h3>
                 <h3><i class="fas fa-arrow-circle-right" style="color:#ffa14e; "></i> Chloride content % - 0.05%</h3>
                 <h3><i class="fas fa-arrow-circle-right" style="color:#ffa14e; "></i> Sieve % (in 240 mesh) - 85%</h3>
@@ -806,10 +821,10 @@
           <div class="container">
             <h2 style="padding: 20px 0px;font-size: 32px;" class="text-center"><strong>World-class Infrastructure</strong> </h2>
             <div class="row">
-              <div class="col-md-6 text-center" style="padding: 50px">
+              <div class="col-md-6 text-center infra-pad" >
                 <img style="box-shadow: 0px 0px 18px 0px #6755559e;" src="assets/images/chemical-infra.jpg" width="100%" alt="sundaravelgroup">
               </div> 
-              <div class="col-md-6 text-center" style="padding: 50px">
+              <div class="col-md-6 text-center infra-pad" >
                 <img style="box-shadow: 0px 0px 18px 0px #6755559e;" src="assets/images/hemical-infra2.jpg" width="100%" alt="sundaravelgroup">
               </div> 
                         

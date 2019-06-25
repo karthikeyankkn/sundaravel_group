@@ -1465,7 +1465,8 @@ General Styles - Owlcarousel
   font-weight: 400;
   font-size: 78px;
   font-weight: bold;
-  font-family: "Helvetica Neue" !important;
+  /*font-family: "Helvetica Neue" !important;*/
+  font-family: 'Montserrat',avenir ,sans-serif !important;
 }
 }
 
@@ -2833,7 +2834,7 @@ Google map
     font-size: 36px;
   }
   .titan-title-size-4 {
-    letter-spacing: 12px;
+    letter-spacing: 2px;
     font-size: 38px;
   }
   .work-item,
