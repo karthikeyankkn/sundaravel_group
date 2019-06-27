@@ -62,7 +62,7 @@
   </head>
 <style>
   body{
-    font-family: 'Montserrat',avenir ,sans-serif !important;
+    font-family: 'avenir',Montserrat ,sans-serif  !important;
   }
   /*.match-menu{
     border-bottom: 3px solid #fff;
@@ -147,7 +147,7 @@
     border: 0;
     border-radius: 0;
     z-index: 1000;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: 'avenir',Montserrat ,sans-serif  !important;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 11px;
@@ -276,7 +276,7 @@
       <section id="home" style="background-image: url(assets/images/cracker-new-logo.jpg);height: 450px;"> 
         <div class="titan-caption" style="background-color: ; padding-top: 250px;">
           <div class="caption-content">
-            <div style="font-family: 'Dancing Script', cursive;color: #FFD700;" class="font-alt titan-title-size-1">
+            <div style="font-family: 'avenir',Montserrat ,sans-serif  !important, cursive;color: #FFD700;" class="font-alt titan-title-size-1">
               <!-- <img src="assets/images/custom/50th Logo.png" alt="50th-aniversary-Logo" width="325"> -->
               <!-- <strong style="font-size: 24px; background: #2c3250; padding: 5px 10px; font-family: fantasy; border-radius: 30px; margin-top: 20px; font-weight: bold;">Celebrating 50th Anniversary</strong> -->
             </div>
@@ -297,7 +297,7 @@
         </div> -->
         <div class="titan-caption" style="background-color: ; padding-top: 350px;">
           <div class="caption-content">
-            <div style="font-family: 'Dancing Script', cursive;color: #FFD700;" class="font-alt titan-title-size-1">
+            <div style="font-family: 'avenir',Montserrat ,sans-serif  !important, cursive;color: #FFD700;" class="font-alt titan-title-size-1">
               <!-- <img src="assets/images/custom/50th Logo.png" alt="50th-aniversary-Logo" width="325"> -->
               <!-- <strong style="font-size: 24px; background: #2c3250; padding: 5px 10px; font-family: fantasy; border-radius: 30px; margin-top: 20px; font-weight: bold;">Celebrating 50th Anniversary</strong> -->
             </div>
@@ -355,8 +355,8 @@
                   <!-- <div class="count-icon"><span class="icon-target"></span></div> -->
                   <!-- <h3 class="count-to font-alt" data-countto="50"></h3> -->
                   <img src="assets/images/handshake-new-icon.png" style="height: 64px;">
-                  <h5 class="" style="font-family: avenir"><strong>50 + YEARS</strong></h5>
-                  <h5 class="" style="font-family: avenir">We have touched more than 50,000 lives through direct or indirect employment in the past 50 years</h5>
+                  <h5 class="" ><strong>50 + YEARS</strong></h5>
+                  <h5 class="" >We have touched more than 50,000 lives through direct or indirect employment in the past 50 years</h5>
                 <!-- </div> -->
               </div>
               
@@ -366,8 +366,8 @@
                   <!-- <h3 class="count-to font-alt" data-countto="1000000000"></h3> -->
                   <!-- <i style="font-size: 50px;" class="fas fa-box-open"></i> -->
                   <img src="assets/images/dollar-new-icon.png" style="height: 64px;" >
-                  <h5 class=""style="font-family: avenir"><strong>1 BILLION</strong></h5>
-                  <h5 class=""style="font-family: avenir">  We manufacture more than 1 billion match boxes in a year</h5>
+                  <h5 class=""><strong>1 BILLION</strong></h5>
+                  <h5 class="">  We manufacture more than 1 billion match boxes in a year</h5>
                 <!-- </div> -->
               </div>
               <div class="col-sm-4 col-md-4 col-lg-4 mob">
@@ -375,8 +375,8 @@
                   <!-- <div class="count-icon"><span class="icon-bargraph"></span></div> -->
                   <!-- <h3 class="count-to font-alt" data-countto="50000 "></h3> -->
                   <img src="assets/images/earth-new-icon.png" style="height: 64px;">
-                  <h5 class=""style="font-family: avenir"><strong>45 Times</strong></h5>
-                  <h5 class=""style="font-family: avenir">Keeping all match sticks we produce in a year, we could go around the circumference of the earth 45 times </h5>
+                  <h5 class=""><strong>45 Times</strong></h5>
+                  <h5 class="">Keeping all match sticks we produce in a year, we could go around the circumference of the earth 45 times </h5>
                 <!-- </div> -->
               </div>
               <!-- <div class="col-sm-6 col-md-3 col-lg-3">
@@ -2354,7 +2354,7 @@
             </div> 
           </div>
         </section> -->
-        <br><br>
+        
         <section style="padding-top: 70px;" id="excellence">
           <div class="container text-center">
             <h2 style="color: #6d6a6a;padding: 25px 0px;font-size: 32px;" class=""><strong>Excellence in Match Making</strong></h2>
@@ -3100,10 +3100,40 @@
             </div>
           </div>
         </section> -->
+        <style>
+         .gdpr-container{
+          background: #000000c7;
+          padding: 10px;
+          color: #fff;
+          text-align: justify;
+          position: fixed;
+          bottom: 0;
+          display: none;
+          left: 0;right: 0;
+          z-index: 2;
+         }
+         .gdpr-container p{
+
+         }
+         .gdpr-container button{
+
+         }
+        </style>
+        <div class="container-fluid">
+          <div class="row gdpr-container">
+            <div class="col-md-10">
+              <p>We use tools to keep the website reliable, secure and measure site performance, as described in our privacy policy.</p>
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-info">Okay</button>
+            </div>
+          </div>
+        </div>
         <div id="footer"></div>
       </div>
       <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
     </main>
+    
     <!--  
     JavaScripts
     =============================================
@@ -3194,6 +3224,27 @@
         });
     });
   </script> 
+  <script>
+  $(document).ready(function(){
+
+    if (localStorage.getItem('gdpr') !== "true") {
+      setTimeout(function(){ 
+        $(".gdpr-container").fadeIn();
+      }, 3000);
+    } else {
+      console.log("GDPR implementation is:"+ localStorage.gdpr);
+    }
+
+    // hide gdpr
+    $(".gdpr-container button").click(function(){
+      localStorage.setItem("gdpr", "true");
+      $(".gdpr-container").hide();
+    });
+  });
+  
+</script>
+
+
     <!-- <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
