@@ -19,7 +19,7 @@ body {
   /*font-family: "Roboto", sans-serif !important;*/
   /*font-family: "Helvetica Neue" !important;*/
   /*font-family: open Sans !important;*/
-  font-family: avenir !important;
+  font-family: 'avenir',Montserrat ,sans-serif  !important;
 }
 
 img {
@@ -695,7 +695,7 @@ a,
   /*font-family: "Roboto Condensed", sans-serif;*/
   /*font-family: 'Allerta Stencil', sans-serif !important;*/
   /*font-family: "Roboto", sans-serif !important;*/
-  font-family: avenir !important;
+  font-family: 'avenir',Montserrat ,sans-serif  !important;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -862,7 +862,7 @@ a,
   /*font-family: "Roboto Condensed", sans-serif;*/
   /*font-family: 'Allerta Stencil', sans-serif !important;*/
   /*font-family: "Roboto", sans-serif !important;*/
-  font-family: avenir !important;
+  font-family: 'avenir',Montserrat ,sans-serif  !important;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
@@ -938,7 +938,7 @@ blockquote {
 }
 
 .font-alt {
-  font-family: avenir !important;
+  font-family: 'avenir',Montserrat ,sans-serif  !important;
   /*font-family: "Roboto", sans-serif !important;*/
   /*font-family: 'Allerta Stencil', sans-serif !important;*/
   /*font-family: "Roboto Condensed", sans-serif;*/
@@ -950,7 +950,7 @@ blockquote {
   /*font-family: Volkhov, "Times New Roman", sans-serif;*/
   /*font-family: 'Allerta Stencil', sans-serif !important;*/
   /*font-family: "Roboto", sans-serif !important;*/
-  font-family: avenir !important;
+  font-family: 'avenir',Montserrat ,sans-serif  !important;
   font-style: italic;
 }
 
@@ -1303,7 +1303,7 @@ General Styles - Owlcarousel
   /*font-family: "Roboto Condensed", sans-serif;*/
   /*font-family: 'Allerta Stencil', sans-serif !important;*/
   /*font-family: "Roboto", sans-serif !important;*/
-  font-family: avenir !important;
+  font-family: 'avenir',Montserrat ,sans-serif  !important;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 11px;
@@ -1466,7 +1466,7 @@ General Styles - Owlcarousel
   font-size: 78px;
   font-weight: bold;
   /*font-family: "Helvetica Neue" !important;*/
-  font-family: 'Montserrat',avenir ,sans-serif !important;
+  font-family: 'avenir',Montserrat ,sans-serif  !important;
 }
 }
 
@@ -2365,7 +2365,7 @@ Google map
   content: "\f106";
   top: 50%;
   right: 0px;
-  font-family: "FontAwesome";
+  font-family: 'avenir',Montserrat ,sans-serif  !important;
   line-height: 1;
   font-size: 14px;
   margin-top: -7px;
