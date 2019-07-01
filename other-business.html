@@ -398,7 +398,10 @@
             border-color: #ee1b25;
         }
         </style>
-<a class="sundaravel-contct-us  button" href="#contact" >  Contact Us</a>
+        
+<a class="sundaravel-contct-us  button hidden-xs" href="#contact" >  Contact Us</a>
+
+<a class="sundaravel-contct-us  button hidden-lg hidden-md hidden-sm" href="#contact" ><i style="transform: rotate(90deg);" class="fa fa-phone"></i> / <i class="fas fa-envelope"></i>  </a>
 
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
@@ -802,7 +805,7 @@
               margin-left: -25px;
             }*/
             .contact {
-              background-image: url("assets/images/matches-banner-new.jpg");
+              background-image: url("assets/images/contact-bg-responsive.jpg");
               background-size: cover;
               background-position: center;
               background-attachment: fixed;
@@ -883,6 +886,13 @@
               width: 80%;
               margin: auto;
           }
+          @media only screen and (max-width:480px) {
+        .work-title {
+          font-size: 15px;
+          color: #fff;
+          margin: 200px 10px 50px;
+      }
+    }
         </style>
 
     <section style="padding-top: 70px;" class="contact pt-100 pb-100" id="contact">
@@ -926,6 +936,10 @@
                             <input style="padding-bottom: 70px;" type="text" placeholder="Queries" name="queries"> 
                               
                            </div>
+                           <div class="col-xl-6">
+                            <label><input style="width: 5%" type="checkbox"  class="" name="Our-privacy-policy" required="">
+                            I have read and agree to <a style="color: #00b5ff;" href="privacy-policy.html">Privacy Policy</a> and hereby representative from Sundaravelgroup can call me back</label>
+                          </div>
                            <input type="hidden" name="_cc" value="enquiry@sundaravelgroup.com" /> 
                           <input type="hidden" name="_subject" value="Lead From Other Business Page" />
                            <div class="col-xl-12">
