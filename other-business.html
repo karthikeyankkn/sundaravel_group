@@ -881,18 +881,27 @@
               border-color: #CC5B00
             }
             select.input-lg {
-              height: 35px;
+              height: 40px;
               line-height: 46px;
               width: 80%;
               margin: auto;
           }
           @media only screen and (max-width:480px) {
-        .work-title {
+            .work-title {
           font-size: 15px;
           color: #fff;
           margin: 200px 10px 50px;
-      }
-    }
+              }
+              .contact {
+              background-image: url("assets/images/contact-us-mobile-bg.jpg");
+              background-size: cover;
+              background-position: center;
+              background-attachment: fixed;
+              position: relative;
+              z-index: 2;
+              color: #fff;
+            }
+            }
         </style>
 
     <section style="padding-top: 70px;" class="contact pt-100 pb-100" id="contact">
@@ -908,19 +917,20 @@
             </div>
             <div class="row text-center">
                   <div class="col-md-6">
-                     <form action="#" class="contact-form">
+                     <form action="https://formspree.io/joshua.simon@spinircle.com" method="POST" class="contact-form">
                         <div class="row">
                            <div class="col-xl-6">
-                              <input type="text" placeholder="Name *" required="">
+                              <input type="text" placeholder="Name *" name="Name" required="">
                            </div> 
                            <div class="col-xl-6">
-                              <input type="text" placeholder="Company Name" >
+                              <input type="text" placeholder="Company Name" name="Company Name" >
                            </div>
                            <div class="col-xl-6">
-                              <input type="text" placeholder="Email" >
+                              <input type="email" placeholder="Email" name="Email">
                            </div>
                            <div class="col-xl-6">
-                              <input type="text" placeholder="Telephone *" required="">
+                              <!-- <input type="number" placeholder="phone number *" required="" name="Phone No" > -->
+                              <input type="text" name="Phone Number" pattern="[6-9]{1}[0-9]{9}" title="Please Enter Valid Number" placeholder="Phone Number" required="">
                            </div>
                            <br>
                            <select class="form-control input-lg" name="subject" >
@@ -940,7 +950,8 @@
                             <label><input style="width: 5%" type="checkbox"  class="" name="Our-privacy-policy" required="">
                             I have read and agree to <a style="color: #00b5ff;" href="privacy-policy.html">Privacy Policy</a> and hereby representative from Sundaravelgroup can call me back</label>
                           </div>
-                           <input type="hidden" name="_cc" value="enquiry@sundaravelgroup.com" /> 
+                           <!-- <input type="hidden" name="_cc" value="enquiry@sundaravelgroup.com" />  -->
+                           <input type="hidden" name="_next" value='/' />
                           <input type="hidden" name="_subject" value="Lead From Other Business Page" />
                            <div class="col-xl-12">
                               <!-- <textarea placeholder="message" cols="30" rows="10"></textarea> -->
