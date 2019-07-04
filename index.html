@@ -61,6 +61,14 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
 <style>
+
+
+
+  /* Only for Safari  */
+/*::i-block-chrome, .back {
+    -webkit-width: 174px !important;
+    -webkit-height: 222px !important;
+}*/
   body{
     font-family: 'avenir',Montserrat ,sans-serif  !important;
   }
@@ -3173,7 +3181,14 @@
       </div>
       <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
     </main>
-    
+    <style type="text/css">
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .back {
+    width: 174px !important;
+    height: 222px !important;
+}
+}
+    </style>
     <!--  
     JavaScripts
     =============================================
