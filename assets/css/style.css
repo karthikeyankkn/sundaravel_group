@@ -1668,7 +1668,17 @@ Google map
   color: #111;
   margin: 16px 0 15px;
 }
-
+.mobile-nav-heading{
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+  top: -22px;
+  /*left: 15px;*/
+  font-weight: bold;
+  transition: 0.2s ease;
+}
 /*--------------------------------------------------------------
 	Team
 --------------------------------------------------------------*/
