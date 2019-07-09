@@ -1675,7 +1675,8 @@ Google map
     text-transform: uppercase;
     position: absolute;
     top: 10px;
-    left: 155px;
+    /*left: 125px;*/
+    left: 40%;
     font-weight: bold;
     transition: 0.2s ease;
 }
