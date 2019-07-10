@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  
+    Document Title
+    =============================================
+    -->
+    <title>Timber</title>
+    <!--  
+    Favicons
+    =============================================
+    -->
+    <script type="text/javascript">
+      var mobile_nav_heading = "Timber"
+    </script>
+    <link rel="icon" type="image/jpg" href="assets/images/website-favicon.png">
+
+    
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    
+    <meta name="theme-color" content="#ffffff">
+    <!--  
+    Stylesheets
+    =============================================
+    
+
+    -->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> -->
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+<style type="text/css">
+  body,html{max-width:100%;
+    overflow-x:hidden}
+  body{
+    font-family: 'avenir',Montserrat ,sans-serif  !important;
+  }
+   .timber-menu{
+    border-bottom: 3px solid #fff;
+  }
+  .navbar-brand {
+    padding: 0px 0px;
+  }
+  .navbar-custom {
+    /*background-color: #00b050;*/
+    background: linear-gradient(to left, #27f50e, #00af50);
+    box-shadow: 0px 0px 10px #000;
+  }
+  .work-image {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 2px #0000004d;
+}
+    /*.sundaravel-contct-us {
+    background-color: #00b050 !important;
+    top: 100px !important;}*/
+    .bg-dark {
+    background: linear-gradient(to left, #27f50e, #00af50);
+    }
+    .side-navbar-container ul li {
+    padding: 2px 5px;
+    border-left: 3px solid #00b050;
+    margin-bottom: 10px;
+    transition: 0.2s ease-out;
+    }
+    .side-navbar-container ul li a:hover {
+    background-color: #00b050 !important;
+    color: #fff;
+    }
+    .side-navbar-alink {
+    background: #00b050;
+    color: #fff !important;
+    }
+    .one > li span:hover {
+    background: #00b050;
+    }
+    .fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #00b050 !important;
+    border-color: #00b050 !important;
+    opacity: .7;
+}
+.infra-pad{
+  padding: 50px;
+}
+</style>
+<style type="text/css">
+  .sundaravel-contct-us {
+    background: linear-gradient(to left, #27f50e, #00af50);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 10px;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    top: 25%;
+    right: 1%;
+    border-radius: 7px;
+    position: fixed;
+    z-index: 100;
+    transform: rotate(0deg);
+}
+</style>
+<style type="text/css">
+            .one {
+              list-style: none;
+              padding: 0;
+              margin: 40px 0;
+            }
+            .one > li {
+              background: #FFFFFF;
+              border: 1px solid rgba(150,150,150,0.29);
+              -moz-box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
+              box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
+              width: 300px;
+              height: 550px;
+              display: inline-block;
+              margin: 0 20px;
+              text-align: center;
+            }
+            .one > li img {
+              margin-top: 60px;
+            }
+            .one > li:hover img {
+              margin-top: 30px;
+            }
+            .one > li:hover {
+              -moz-box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
+              box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
+            }
+            .one > li:hover span {
+              border-radius: 0;
+              -webkit-border-radius: 0;
+              -moz-border-radius: 0;
+              bottom: -400px;
+            }
+            .one > li:hover h3 {
+              color: rgba(255,255,255,1);
+              margin-top: 25px;
+            }
+            .one > li .wrapper {
+              overflow: hidden;
+              position: absolute;
+              width: 300px;
+              height: 550px;
+            }
+            .one > li span {
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              height: 500px;
+              width: 500px;
+              background: #00b050;
+              display: block;
+              position: absolute;
+              bottom: -300px;
+              left: -110px;
+            }
+            .one > li span img {
+              margin-top: 10px;
+              width: 50px;
+            }
+            .one > li span:hover {
+                background: #00b050;
+            }
+            .one > li h3 {
+              margin-top: 40px;
+              color: rgba(255,255,255,1);
+              font-size: 15px;
+            }
+            .one > li h3 em {
+              display: block;
+              font-style: normal;
+              text-transform: uppercase;
+              font-weight: 300;
+              font-size: 12px;
+              margin-top: 5px;
+            }
+            .one .social {
+              list-style: none;
+              text-align: center;
+              margin: 10px 0 0 0;
+              padding: 10px;
+            }
+            .one .social li {
+              opacity: 0;
+              display: inline-block;
+              padding: 5px;
+            }
+            .one > li:hover .social li {
+              opacity: 0.5;
+            }
+            .one .social li a {
+              cursor: pointer;
+              display: block;
+            }
+            .one .social li a:hover {
+              opacity: 0.5;
+            }
+            .one .social li img {
+              width: 24px;
+            }
+            .transition {
+              transition: .3s cubic-bezier(.3, 0, 0, 1.3)
+            }
+            .three .transition {
+              transition: .7s cubic-bezier(.3, 0, 0, 1.3)
+            }
+            .five .transition {
+              transition: .5s cubic-bezier(.3, 0, 0, 1.3)
+            }
+        </style>
+        
+
+        <style type="text/css">
+         
+ 
+          .thumbnail {
+              position:relative;
+              overflow:hidden;
+              border: none;
+          }
+           
+          .caption {
+              position:absolute;
+              top:-100%;
+              right:0;
+              background-color: #ee1c25e6;
+              width:100%;
+              height:100%;
+              padding:2%;
+              text-align:center;
+              color:#fff !important;
+              z-index:2;
+              -webkit-transition: all 0.5s ease-in-out;
+              -moz-transition: all 0.5s ease-in-out;
+              -o-transition: all 0.5s ease-in-out;
+              -ms-transition: all 0.5s ease-in-out;
+              transition: all 0.5s ease-in-out;
+          }
+          .thumbnail:hover .caption {
+              top:0%;
+          }
+              
+        </style>
+        
+        
+        <style type="text/css">
+          .panel-default>.panel-heading {
+            color: #fff;
+            background-color: #ee1b25;
+            border-color: #ee1b25;
+        }
+        </style>
+        
+<a class="sundaravel-contct-us  button hidden-xs" href="#contact" >  Contact Us</a>
+
+<a class="sundaravel-contct-us  button hidden-lg hidden-md hidden-sm" href="#contact" ><i style="transform: rotate(90deg);" class="fa fa-phone"></i> / <i class="fas fa-envelope"></i>  </a>
+
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+      <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation" id="header">
+        
+      </nav>
+      <section style="display: none;" class="home-section bg-dark-30" id="home" data-background="https://lh3.googleusercontent.com/-LuSkDCcvRTM/XOUr0yuUWuI/AAAAAAAAAHM/hcG9Gt46VTkK2Luc4YO2_QJ7PT8Jb3vkQCK8BGAs/s0/2019-05-22.jpg">
+        <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=oV6UFGWwifE', containment:'.home-section', startAt:1, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
+        <div class="video-controls-box">
+          <div class="container">
+            <div class="video-controls"><a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div>
+          </div>
+        </div>
+        <div class="titan-caption" style="background-color: #0000004f;">
+          <div class="caption-content">
+            <div style="font-family: 'Dancing Script', cursive;color: #FFD700" class="font-alt mb-30 titan-title-size-1"><strong>Celebrating 50th Anniversary</strong></div>
+            <div  class="font-alt mb-40 titan-title-size-4">Sundaravel Match <br> Industries</div><a class="section-scroll btn btn-border-w btn-round" href="#menu2">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <div class="main">
+        <!-- <section class="module-extra-small bg-dark">
+          
+          <div class="side-navbar-container">
+            <ul>
+              <li>
+                <a href="#home">HOME</a>
+              </li>
+              <li>
+                <a href="#menu2">PROCESS</a>
+              </li>
+              
+              <li>
+                <a href="#menu4">PROFILE</a>
+              </li>
+              <li>
+                <a href="#menu5">INFRASTRUCTURE</a>
+              </li>
+            </ul>
+          </div>
+        </section> -->
+
+        
+        <style type="text/css">
+          
+        .carousel-control.left
+      {
+        background: none;
+      }
+      .carousel-control.right
+      {
+        background: none;
+      }
+
+      .carousel-control
+      {
+        position: absolute;
+        top: 45%;
+        bottom: 0;
+        left: 0;
+        width: 15%;
+        font-size: auto;
+        color: #fff;
+        text-align: center;
+        opacity: 1;
+        text-shadow: none;
+      }
+      .carousel-control:hover
+      {
+        color: #000;
+      }
+      .carousel-indicators
+      {
+        bottom: -50px;
+      }
+      .carousel-indicators li
+      {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #000\9;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid #05b847;
+        border-radius: 50%;
+      }
+      .carousel-indicators .active
+      {
+        width: 12px;
+        height: 12px;
+        margin: 0;
+        background-color: #05b847;
+      }
+      .carousel-caption
+      {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: left;
+        
+        background: rgba(0,0,0,0.4);
+      }
+      .carousel-caption h2 {
+      margin-left: 10%;
+      font-size: 50px;
+      }
+      .carousel-caption p {
+      margin-left: 10%;
+      }
+      .carousel-inner>.item>img {
+          line-height: 1;
+          height: 600px;
+          width: 100%;
+      }
+      @media only screen and (max-width:480px) {
+        .carousel-inner>.item>img {
+          line-height: 1;
+          height: 400px;
+          width: 100%;
+        }
+        .infra-pad{
+        padding: 10px;
+        }
+        .work-title {
+          font-size: 15px;
+          color: #fff;
+          margin: 200px 10px 50px;
+      }
+      .navbar-nav{
+        text-align: center;
+      }
+    }
+        </style>
+        <section class="hidden-xs">
+
+              <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;">
+                  <!-- Indicators -->
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                              <img src="assets/images/timber-ukrine2.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2><strong>Workmanship</strong></h2>
+                                  <p><strong>We use the finest of tools to manufacture splints <br> of precise dimensions and aesthetics </strong></p>
+                                 
+                              </div>
+                          </div>
+                          <div class="item">
+                              <img src="assets/images/timber-ukrine.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2><strong>Imported Timber</strong></h2>
+                                  <p><strong>We use the finest of timber imported from Germany <br> and Belgium to product high quality splints</strong></p>
+                                 
+                              </div>
+                          </div>
+                          <div class="item">
+                              <img src="assets/images/timber-ukrine3.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2><strong>Finishing</strong></h2>
+                                  <p><strong>Entire processing and finishing of match splints is <br> done at our own in-house facility</strong></p>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Left and right controls -->
+                     <!--  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                          <span class="fa fa-angle-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                          <span class="fa fa-angle-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a> -->
+                      <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                  </div>
+              </div>
+        </section>
+
+
+        <section class="hidden-sm hidden-md hidden-lg">
+
+              <div class="container-fluid" style="padding-right: 0px;padding-left: 0px;">
+                  <!-- Indicators -->
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                              <img src="assets/images/timber-ukrine2.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2><strong>Workmanship</strong></h2>
+                                  <p><strong>We use the finest of tools to manufacture splints <br> of precise dimensions and aesthetics </strong></p>
+                                 
+                              </div>
+                          </div>
+                          <div class="item">
+                              <img src="assets/images/timber-ukrine.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2><strong>Imported Timber</strong></h2>
+                                  <p><strong>We use the finest of timber imported from Germany  and Belgium to product high quality splints</strong></p>
+                                 
+                              </div>
+                          </div>
+                          <div class="item">
+                              <img src="assets/images/timber-ukrine3.jpg" alt="sundaravelgroups">
+                              <div class="carousel-caption">
+                                  <h2><strong>Finishing</strong></h2>
+                                  <p><strong>Entire processing and finishing of match splints is <br> done at our own in-house facility</strong></p>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Left and right controls -->
+                     <!--  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                          <span class="fa fa-angle-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                          <span class="fa fa-angle-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a> -->
+                      <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                  </div>
+              </div>
+        </section>
+
+
+        <section style="padding-top: 50px;" id="process" class=" sliding-portfolio hidden-xs">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 style="padding: 20px 0px;font-size: 32px;" class="text-center"><strong>Streamlined Processes</strong></h2>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="owl-carousel text-center" data-items="4" data-pagination="false" data-navigation="false">
+                <!-- <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-log1.jpg" alt="sundaravelgroups"/></div>
+                        <h3>Timber Log</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Timber Log</h3>
+                          <div class="work-descr">Illustration</div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-banner3.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class="">Procurement</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Procurement</h3>
+                          <div class="work-descr">Marketing</div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-car.jpeg" alt="sundaravelgroups"/></div>
+                        <h3 class="">Carburising</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Carburising</h3>
+                          <div class="work-descr">Illustration</div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-pac.jpeg" alt="sundaravelgroups"/></div>
+                        <h3 class="">Timber Packaging</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Timber Packaging</h3>
+                          <div class="work-descr">Illustration</div>
+                        </div></a></div>
+                  </div>
+                </div> -->
+                <!-- <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-log1.jpg" alt="sundaravelgroups"/></div>
+                        <h3>Log cutting</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Timbers are cut to size with band saw</h3>
+                          <div class="work-descr">Illustration</div>
+                        </div></a></div>
+                  </div>
+                </div> -->
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/debar-ukrine.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Debarking</strong></h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Barks of the timber are removed using an advanced debarking machine</h3>
+                          <!-- <div class="work-descr">Marketing</div> -->
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-peeling.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Peeling</strong></h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Timbers are peeled to form ply</h3>
+                          <!-- <div class="work-descr">Illustration</div> -->
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-chop.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Chopping</strong></h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">ply is finely chopped into splints and cleaned thoroughly</h3>
+                          <!-- <div class="work-descr">Illustration</div> -->
+                        </div></a></div>
+                  </div>
+
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-dry.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Drying</strong></h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Splints are dried in the dryer to remove moisture content</h3>
+                          <!-- <div class="work-descr">Illustration</div> -->
+                        </div></a></div>
+                  </div>
+                </div>
+
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-polishing.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Polishing</strong></h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Splints are polished by removing extra fiber</h3>
+                          <!-- <div class="work-descr">Illustration</div> -->
+                        </div></a></div>
+                  </div>
+                </div>
+
+                <!-- <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-car.jpeg" alt="sundaravelgroups"/></div>
+                        <h3 class="">Leveling and selecting</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">short splints and dust particles are removed</h3>
+                          <div class="work-descr">Illustration</div>
+                        </div></a></div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section style="padding-top: 50px;" id="process-mob" class=" sliding-portfolio hidden-sm hidden-md hidden-lg">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 style="padding: 20px 0px;font-size: 32px;" class="text-center"><strong>Streamlined Processes</strong></h2>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="owl-carousel text-center" data-items="1" data-pagination="false" data-navigation="false">
+                <!-- <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-log1.jpg" alt="sundaravelgroups"/></div>
+                        <h3>Timber Log</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Timber Log</h3>
+                          <div class="work-descr">Illustration</div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-banner3.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class="">Procurement</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Procurement</h3>
+                          <div class="work-descr">Marketing</div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-car.jpeg" alt="sundaravelgroups"/></div>
+                        <h3 class="">Carburising</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Carburising</h3>
+                          <div class="work-descr">Illustration</div>
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-pac.jpeg" alt="sundaravelgroups"/></div>
+                        <h3 class="">Timber Packaging</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Timber Packaging</h3>
+                          <div class="work-descr">Illustration</div>
+                        </div></a></div>
+                  </div>
+                </div> -->
+                <!-- <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-log1.jpg" alt="sundaravelgroups"/></div>
+                        <h3>Log cutting</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Timbers are cut to size with band saw</h3>
+                          <div class="work-descr">Illustration</div>
+                        </div></a></div>
+                  </div>
+                </div> -->
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/debar-ukrine.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Debarking</strong></h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Barks of the timber are removed using an advanced debarking machine</h3>
+                          <!-- <div class="work-descr">Marketing</div> -->
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-peeling.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Peeling</strong></h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Timbers are peeled to form ply</h3>
+                          <!-- <div class="work-descr">Illustration</div> -->
+                        </div></a></div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-chop.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Chopping</strong></h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">ply is finely chopped into splints and cleaned thoroughly</h3>
+                          <!-- <div class="work-descr">Illustration</div> -->
+                        </div></a></div>
+                  </div>
+
+                </div>
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-dry.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Drying</strong></h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Splints are dried in the dryer to remove moisture content</h3>
+                          <!-- <div class="work-descr">Illustration</div> -->
+                        </div></a></div>
+                  </div>
+                </div>
+
+                <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-polishing.jpg" alt="sundaravelgroups"/></div>
+                        <h3 class=""><strong>Polishing</strong></h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Splints are polished by removing extra fiber</h3>
+                          <!-- <div class="work-descr">Illustration</div> -->
+                        </div></a></div>
+                  </div>
+                </div>
+
+                <!-- <div class="owl-item">
+                  <div class="col-sm-12">
+                    <div class="work-item">
+                        <div class="work-image"><img src="assets/images/timber-car.jpeg" alt="sundaravelgroups"/></div>
+                        <h3 class="">Leveling and selecting</h3>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">short splints and dust particles are removed</h3>
+                          <div class="work-descr">Illustration</div>
+                        </div></a></div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        
+
+        <!-- <section id="menu4">
+          <div class="container">
+            <div class="row">
+              <h2 class="module-title">LEADERSHIP SPEAKS</h2>
+                
+                
+                <ul class="one text-center">
+                  <li class="transition">
+                    <div class="wrapper"> <img class="transition" src="assets/images/custom/04-Sundaravel.jpg">
+                      <ul class="social">
+                       <li style="color: #000;font-size: 12px;">"We envision 27 matches to be the top selling safety matches in India.In order to achieve this vision, we ensure that our employees are strongly aligned with our company’s values and mission.”</li>
+                        
+                      </ul>
+                      <span class="transition">
+                      <h3>Shri S.S. Sankaralingam, <em></em></h3>
+                      <h3>Founder<em></em></h3>
+                       </span> </div>
+                  </li>
+                  <li class="transition">
+                    <div class="wrapper"> <img class="transition" src="assets/images/chairman.jpg">
+                      <ul class="social">
+                        <li style="color: #000;font-size: 12px;">“We commit to every person, entity or organisation, associated with us to honour our deliverables
+                        by adhering to industry benchmarked practices. We ensure fair benefit to every stakeholder
+                        working with us, irrespective of the market conditions to maintain stable business conditions.”</li>
+                        
+                      </ul>
+                      <span class="transition">
+                      <h3>S.Sriram Ashok, <em></em></h3>
+                      <h3>Chairman</h3>
+                       </span> </div>
+                  </li>
+                  <li class="transition">
+                    <div class="wrapper"> <img class="transition" src="assets/images/managing-director-new.jpg" >
+                      <ul class="social">
+                        <li style="color: #000;">We are committed in working towards improving the quality of living of all our employees. We
+                        believe that the real growth of the company depends on the growth of its employees and the
+                        society in which it operates.”</li>
+                        
+                      </ul>
+                      <span class="transition">
+                      <h3>S.Hariram Sundaravel<em></em></h3>
+                      <h3>Managing Director</h3>
+                       </span> </div>
+                  </li>
+                  
+                </ul>
+            </div>
+          </div>
+        </section> -->
+        
+
+        <section  id="infrastructure" style="padding: 20px;padding-top: 50px;">
+          <div class="container">
+            <h2 style="padding: 20px 0px;font-size: 32px;" class="text-center"><strong>World-class Infrastructure</strong></h2>
+            <div class="row">
+              
+              <div class="col-md-6 text-center infra-pad" >
+                <img style="box-shadow: 0px 0px 18px 0px #6755559e;" src="assets/images/timber-infra-ukrine2.jpg" width="100%" alt="sundaravelgroup">
+              </div> 
+              <div class="col-md-6 text-center infra-pad" >
+                <img style="box-shadow: 0px 0px 18px 0px #6755559e;" src="assets/images/timber-infra-ukrine1.jpg" width="100%" alt="sundaravelgroup">
+              </div> 
+                        
+            </div>
+          </div>
+        </section>
+        
+        <!-- <section id="contact" class="module bg-dark-60 request-cta" data-background="assets/images/matches-parallex.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h2 class="font-alt">CONTACT US</h2>
+                <p> Just submit your details </p>
+              </div>
+              <div class="col-sm-12 text-center">
+                <div class="row">
+                  <form class="form rqst-form" id="requestACall" role="form" method="post" action="php/request_call.php">
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <input class="form-control input-lg" type="text" name="name" placeholder="Name"/>
+                    </div>
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <select class="form-control input-lg" name="subject">
+                        <option value="subject1" disabled="" selected="">Company</option>
+                        <option value="Matches">Matches</option>
+                        <option value="Printing">Printing</option>
+                        <option value="Timber">Timber</option>
+                        <option value="chemicals">chemicals</option>
+                        <option value="other_business">other business</option>
+                        
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <input class="form-control input-lg" type="text" name="phone" placeholder="Phone Number"/>
+                    </div>
+                    <div class="form-group col-sm-6 col-xs-12">
+                      <button class="btn btn-border-w btn-circle btn-block" id="racSubmit" type="submit"><i class="fa fa-paper-plane-o"></i> Submit</button>
+                    </div>
+                    <div id="requestFormResponse"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <style type="text/css">
+          .pb-100 {
+              padding-bottom: 50px;
+            }
+            .pt-100 {
+              padding-top: 50px;
+            }
+            .mb-100 {
+              margin-bottom: 50px;
+            }
+            a {
+              text-decoration: none;
+              color: #333;
+              -webkit-transition: .4s;
+              transition: .4s;
+            }
+            .section-title {
+              position: relative;
+            }
+            .section-title p {
+              font-size: 16px;
+              margin-bottom: 5px;
+              font-weight: 400;
+            }
+            .section-title h4 {
+              font-size: 38px;
+              font-weight: 600;
+              text-transform: capitalize;
+              position: relative;
+              padding-bottom: 20px;
+              display: inline-block;
+            }
+            /*.section-title h4::before {
+              position: absolute;
+              content: "";
+              width: 80px;
+              height: 2px;
+              background-color: #d8d8d8;
+              bottom: 0;
+              left: 50%;
+              margin-left: -40px;
+            }
+            .section-title h4::after {
+              position: absolute;
+              content: "";
+              width: 50px;
+              height: 2px;
+              background-color: #00b050;
+              left: 0;
+              bottom: 0;
+              left: 50%;
+              margin-left: -25px;
+            }*/
+            .contact {
+              background-image: url("assets/images/contact-bg-responsive.jpg");
+              background-size: cover;
+              background-position: center;
+              background-attachment: fixed;
+              position: relative;
+              z-index: 2;
+              color: #fff;
+            }
+            .contact-form input,
+            textarea {
+              width: 80%;
+              border: 1px solid #fff;
+              padding: 5px 10px;
+              text-transform: capitalize;
+              margin-top: 15px;
+              background-color: #0000004d !important;
+              color: #fff;
+              border-radius: 6px;
+            }
+            .contact:before {
+              position: absolute;
+              content: "";
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              background-color: #333333b8;
+              z-index: -1;
+              opacity: .85;
+              -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+            }
+            .single-contact {
+              text-align: left;
+              position: relative;
+              padding-left: 70px;
+              margin-bottom: 50px;
+              margin-top: 10px;
+            }
+            .single-contact i.fa {
+              position: absolute;
+              left: 0;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+                      transform: translateY(-50%);
+              background-color: #00b050;
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              text-align: center;
+              border-radius: 3px;
+            }
+            .single-contact h5 {
+              font-size: 18px;
+              margin-bottom: 10px;
+              font-weight: 500;
+            }
+            .single-contact p {
+              font-size: 15px;
+              font-weight: 400;
+            }
+            .contact-form input[type="submit"] {
+              background-color: #00b050;
+              border: 0px;
+              cursor: pointer;
+              font-size: 16px;
+              -webkit-transition: .4s;
+              transition: .4s
+            }
+            .contact-form input[type="submit"]:hover {
+              background-color: #fff;
+              color: #00b050;
+            }
+            .contact-form input:focus, textarea:focus {
+              border-color: #CC5B00
+            }
+            select.input-lg {
+              height: 40px;
+              line-height: 46px;
+              width: 80%;
+              margin: auto;
+          }
+          @media only screen and (max-width:480px) {
+            .contact {
+              background-image: url("assets/images/contact-parallex-mob-2.jpeg");
+              background-size: cover;
+              background-position: center;
+              background-attachment: fixed;
+              position: relative;
+              z-index: 2;
+              color: #fff;
+            }
+          }
+        </style>
+
+    <section style="padding-top: 70px;" class="contact pt-100 pb-100" id="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 mx-auto text-center">
+                  <div class="section-title mb-100">
+                     
+                     <h4>Contact Us</h4>
+                     <h5 style="font-size: 21px;">We look forward to hearing from you</h5>
+                  </div>
+               </div>
+            </div>
+            <div class="row text-center">
+                  <div class="col-md-6">
+                     <form action="https://formspree.io/joshua.simon@spinircle.com" method="POST" class="contact-form">
+                        <div class="row">
+                           <div class="col-xl-6">
+                              <input type="text" placeholder="Name *" name="Name" required="">
+                           </div> 
+                           <div class="col-xl-6">
+                              <input type="text" placeholder="Company Name" name="Company Name" >
+                           </div>
+                           <div class="col-xl-6">
+                              <input type="email" placeholder="Email" name="Email">
+                           </div>
+                           <div class="col-xl-6">
+                              <!-- <input type="number" placeholder="phone number *" required="" name="Phone No" > -->
+                              <!-- <input type="number" name="Phone Number" pattern="[6-9]{1}[0-9]{9}" title="Please Enter Valid Number" placeholder="Phone Number *" required=""> -->
+                              <input type="number"  name="Phone Number" placeholder="Phone Number *" onKeyPress="if(this.value.length >= 15) return false;" min="5000" required title="Please Enter Valid Number" />
+                           </div>
+                           <br>
+                           <select class="form-control input-lg" name="subject" >
+                            <option value="subject1" disabled="" selected="">Subject</option>
+                            <option value="Matches">Matches</option>
+                            <option value="Printing">Printing</option>
+                            <option value="Timber">Timber</option>
+                            <option value="chemicals">chemicals</option>
+                            <option value="Fireworks">Fireworks</option>
+                            <option value="other_business">other business</option>
+                          </select>
+                          <div class="col-xl-6">
+                            <input style="padding-bottom: 70px;" type="text" placeholder="Queries" name="queries"> 
+                              
+                           </div>
+                           <div class="col-xl-6">
+                            <label><input style="width: 5%" type="checkbox"  class="" name="Our-privacy-policy" required="">
+                            I have read and agree to <a style="color: #00b5ff;" href="privacy-policy.html">Privacy Policy</a> and hereby representative from Sundaravelgroup can call me back</label>
+                          </div>
+                          <input type="hidden" name="_cc" value="enquiry@sundaravelgroup.com" /> <input type="hidden" name="_next" value='/' />
+                          <input type="hidden" name="_subject" value="Lead From Timber Page" />
+                           <div class="col-xl-12">
+                              <!-- <textarea placeholder="message" cols="30" rows="10"></textarea> -->
+                              <input style="background-color: #00b050 !important" type="submit" value="send message">
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-md-6"> 
+                     
+                     <div class="single-contact">
+                        <i style="transform: rotate(90deg);" class="fa fa-phone"></i>
+                        <h5>Phone</h5>
+                        <!-- <p>+ 91 4562 272147 / 272328</p> -->
+                        <a style="color: #fff;" href="tel: +914562272147">+ 91 4562 272147 / 272328</a>
+                     </div>
+                     <div class="single-contact">
+                        <i class="fa fa-envelope"></i>
+                        <h5>Email</h5>
+                        <!-- <p>enquiry@sundaravelgroup.com</p> -->
+                        <a style="color: #fff;" href="mailto: enquiry@sundaravelgroup.com">enquiry@sundaravelgroup.com</a>
+                     </div>
+                     <div class="single-contact">
+                        <i class="fa fa-map-marker"></i>
+                        <h5>Address</h5>
+                        <p>69, A.S.K. Thangaiah Nadar Road, Sivakasi 626123, India.</p>
+                     </div>
+                  </div>
+            </div>
+         </div>
+      </section>   
+        <div id="footer"></div>
+      </div>
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
+    <!--  
+    JavaScripts
+    =============================================
+    -->
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Axt8xiFYMBMDwwG1XzBQvEbYpzCvFU"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $(".side-navbar-container ul li").click(function(){
+          debugger
+          $(this).addClass("side-navbar-border").siblings().removeClass("side-navbar-border");
+          $(this).children("a").addClass("side-navbar-alink").parent("li").siblings("li").children("a").removeClass("side-navbar-alink");
+        });
+
+      });
+    </script>
+    <script type="text/javascript">
+  $(document).ready(function(){
+   
+    $(".front").click(function(){
+      $(this).toggleClass("flip-rotate").siblings(".back").toggleClass("flip-rotate");
+    });
+    $(".back").mouseleave(function(){
+      $(this).toggleClass("flip-rotate").siblings(".front").toggleClass("flip-rotate");
+    });
+  });
+</script>
+    
+  </body>
+</html>
+
+
